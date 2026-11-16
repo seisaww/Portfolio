@@ -6,7 +6,7 @@
       shots example: [{ src: "images/pollution-1.png", alt: "Report form" }]
    3. CERTIFICATIONS: add an entry to "certs" in each language (the carousel adapts).
    ===================================================================== */
-var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv: "", letter: "" };   /* paste your GitLab and LinkedIn URLs here */
+var LINKS = { github: "https://github.com/seisaww", gitlab: "https://gitlab.com/laazibiimane101", linkedin: "https://www.linkedin.com/in/imane-l-827170275/", cv: "candidature/CV-LAAZIBI_Imane.pdf", letter: "candidature/CL-LAAZIBI_Imane.pdf" };   /* paste your GitLab and LinkedIn URLs here */
 var EMAIL = "laazibiimane101@gmail.com";
 
 var PROJECT_META = [
@@ -70,7 +70,7 @@ var C = {
       theme_aria: "Switch between dark and light theme", lang_btn: "FR", lang_aria: "Passer le site en français",
       hero_role: "Computer science engineering student.",
       hero_intro: "As a Data & BI Engineer at Domial on a work-study contract, I build BI reports for the company's different business teams, set up data quality controls and put a data architecture in place in our data warehouse (DWH). Alongside, I'm working toward my engineering degree at CNAM Grand Est.",
-      hero_status: "Looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2028.",
+      hero_status: "Looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October .",
       cta_projects: "See my projects", cta_contact: "Get in touch",
       about_title: "How I met computer science",
       about_p1: "I did an STMG baccalaureate with a marketing option, with a mention assez bien. I enjoyed the Python we did in maths class, so I headed to a BTS in software development (SIO, SLAM option) with no background in computing, and graduated.",
@@ -84,16 +84,16 @@ var C = {
       ],
       tl_title: "Experience and education",
       skills_title: "Tools and skills",
-      projects_title: "Selected projects",
+      projects_title: "Projects",
       prev_aria: "Previous project", next_aria: "Next project", c_prev_aria: "Previous certification", c_next_aria: "Next certification", open_hint: "See details",
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon", lb_close: "Close", lb_prev: "Previous screenshot", lb_next: "Next screenshot", lb_open: "Enlarge screenshot",
       certs_title: "Certifications",
       contact_title: "Let's talk",
-      contact_intro: "I'm looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2028. Send me a message or find me through the links below.",
+      contact_intro: "I'm looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2027. Send me a message or find me through the links below.",
       f_name: "Name", f_email: "Email", f_msg: "Message", f_send: "Send message",
       f_ok: "Message sent. I'll get back to you as soon as I can.",
       f_fallback: "The message couldn't be sent directly, so your email app will open instead.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter",
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "CV", l_letter: "Cover letter",
       circuit_hint: "Drag the devices around, or select one to see its details."
     },
     timeline: [
@@ -195,11 +195,12 @@ var C = {
       }
     },
     certs: [
+      { year: "2026", name: "Cisco Introduction to Modern AI", icon: "spark", text: "The foundations of modern artificial intelligence: how machine learning and generative AI work, how to use AI tools effectively, and their limits and responsible use." },
       { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "API development, network automation, Python and DevOps tools (Git, REST, JSON)." },
+      { year: "2024", name: "Cisco IT Essentials", icon: "cpu", text: "Computer hardware and maintenance: assembling and upgrading PCs, installing and configuring operating systems, networking basics and troubleshooting." },
       { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Cybersecurity fundamentals: threats and attack techniques, data protection and confidentiality, securing an organisation." },
-      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." },
-      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." },
-      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." }
+      { year: "2023", name: "Learnathon", icon: "flag", text: "An intensive cybersecurity training marathon, completed in October 2023." },
+      { year: "2023", name: "SecNumacadémie", icon: "lock", text: "ANSSI's online course on information security: the cyber threat landscape, authentication and passwords, safe internet use and protecting devices." }
     ]
   },
 
@@ -212,7 +213,7 @@ var C = {
       theme_aria: "Basculer entre le thème sombre et le thème clair", lang_btn: "EN", lang_aria: "Switch the site to English",
       hero_role: "Étudiante ingénieure en informatique.",
       hero_intro: "Ingénieure Data & BI chez Domial en alternance, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH. En parallèle, je prépare mon diplôme d'ingénieure au CNAM Grand Est.",
-      hero_status: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028.",
+      hero_status: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2027.",
       cta_projects: "Voir mes projets", cta_contact: "Me contacter",
       about_title: "Comment j'ai rencontré l'informatique",
       about_p1: "J'ai passé un bac STMG option marketing, avec mention assez bien. J'ai beaucoup aimé le Python que nous faisions en mathématiques, alors je me suis dirigée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique, et je l'ai obtenu.",
@@ -226,16 +227,16 @@ var C = {
       ],
       tl_title: "Expérience et formation",
       skills_title: "Outils et compétences",
-      projects_title: "Projets choisis",
+      projects_title: "Projets",
       prev_aria: "Projet précédent", next_aria: "Projet suivant", c_prev_aria: "Certification précédente", c_next_aria: "Certification suivante", open_hint: "Voir les détails",
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir", lb_close: "Fermer", lb_prev: "Capture précédente", lb_next: "Capture suivante", lb_open: "Agrandir la capture",
       certs_title: "Certifications",
       contact_title: "Échangeons",
-      contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
+      contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2027. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
       f_name: "Nom", f_email: "E-mail", f_msg: "Message", f_send: "Envoyer le message",
       f_ok: "Message envoyé. Je vous répondrai dès que possible.",
       f_fallback: "L'envoi direct a échoué : votre application de messagerie va s'ouvrir.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation",
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "CV", l_letter: "Lettre de motivation",
       circuit_hint: "Déplacez les appareils, ou sélectionnez-en un pour voir le détail."
     },
     timeline: [
@@ -337,11 +338,12 @@ var C = {
       }
     },
     certs: [
+      { year: "2026", name: "Cisco Introduction à l'IA moderne", icon: "spark", text: "Les bases de l'intelligence artificielle moderne : fonctionnement de l'apprentissage automatique et de l'IA générative, bonne utilisation des outils d'IA, leurs limites et un usage responsable." },
       { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "Développement d'API, automatisation réseau, Python et outils DevOps (Git, REST, JSON)." },
+      { year: "2024", name: "Cisco IT Essentials", icon: "cpu", text: "Matériel informatique et maintenance : assemblage et évolution de PC, installation et configuration de systèmes d'exploitation, bases des réseaux et dépannage." },
       { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Fondamentaux de la cybersécurité : menaces et techniques d'attaque, protection et confidentialité des données, sécurisation d'une organisation." },
-      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." },
-      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." },
-      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." }
+      { year: "2023", name: "Learnathon", icon: "flag", text: "Un marathon de formation intensive à la cybersécurité, réalisé en octobre 2023." },
+      { year: "2023", name: "SecNumacadémie", icon: "lock", text: "Le MOOC de l'ANSSI sur la sécurité du numérique : panorama de la menace, authentification et mots de passe, sécurité sur Internet et protection des postes." }
     ]
   }
 };
@@ -873,13 +875,17 @@ var ART = {
   })();
 
   /* ---------- certifications: a draggable, glowing network topology ---------- */
-  var circ = { pos: [], sel: 1, edges: [], packets: [], raf: 0, vis: false, last: 0 };
-  var CERT_POS = [[.2, .24], [.8, .24], [.16, .78], [.84, .78], [.5, .9]];
-  var EDGE_SET = [[1, 2], [1, 3], [2, 4], [3, 5], [4, 5]];
+  var circ = { pos: [], sel: 0, edges: [], packets: [], raf: 0, vis: false, last: 0 };
+  var CERT_POS = [[.5, .13], [.18, .3], [.82, .3], [.16, .78], [.84, .78], [.5, .9]];
+  var EDGE_SET = [[1, 2], [1, 3], [2, 4], [3, 5], [4, 6], [5, 6]];
   var ICONS = {
     code: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>',
     shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
     badge: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg>',
+    spark: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>',
+    cpu: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>',
+    lock: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg>',
+    flag: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
     plus: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>'
   };
   var circuitEl = $("#circuit"), nodesEl = $("#circNodes"), wiresEl = $("#wires");
@@ -888,11 +894,11 @@ var ART = {
     var list = C[lang].certs, u = ui();
     if (circ.pos.length !== list.length + 1) {
       circ.pos = [{ fx: .5, fy: .5 }].concat(list.map(function (c, i) { var p = CERT_POS[i % CERT_POS.length]; return { fx: p[0], fy: p[1] }; }));
-      circ.sel = 1;
+      circ.sel = 0;
     }
     nodesEl.innerHTML = '<div class="node hub" data-n="0"><span class="dev"><b>IL</b></span><span class="nl">' + esc(u.certs_title) + "</span></div>" +
       list.map(function (c, i) {
-        return '<button class="node cert' + (c.soon ? " soon" : "") + '" type="button" data-n="' + (i + 1) + '" aria-pressed="false">' +
+        return '<button class="node cert' + (c.soon ? " soon" : "") + '" type="button" data-n="' + (i + 1) + '" aria-expanded="false" aria-controls="certPop">' +
           '<span class="dev">' + ICONS[c.soon ? "plus" : (c.icon || "badge")] + '</span><span class="nl">' + esc(c.name) + "</span></button>";
       }).join("");
     circ.edges = list.map(function (c, i) { return [0, i + 1]; }).concat(EDGE_SET.filter(function (e) { return e[0] <= list.length && e[1] <= list.length; }));
@@ -915,6 +921,7 @@ var ART = {
       l.setAttribute("x1", a.fx * w); l.setAttribute("y1", a.fy * h); l.setAttribute("x2", b.fx * w); l.setAttribute("y2", b.fy * h);
     });
     drawPackets();
+    placePop();
   }
   function drawPackets() {
     var w = circuitEl.clientWidth, h = circuitEl.clientHeight, dots = $$(".pkt", wiresEl);
@@ -933,15 +940,45 @@ var ART = {
     circ.raf = requestAnimationFrame(circTick);
   }
   function circStart() { if (!circ.raf && circ.vis && !reduce) { circ.last = performance.now(); circ.raf = requestAnimationFrame(circTick); } }
+  /* the details bubble opens right next to the selected device (0 = none open) */
+  var popEl = $("#certPop");
   function selectCert(i) {
-    if (i < 1) return;
+    var c = C[lang].certs[i - 1];
+    if (!c) i = 0;
     circ.sel = i;
     $$(".cert", nodesEl).forEach(function (n) {
       var on = +n.getAttribute("data-n") === i;
-      n.classList.toggle("sel", on); n.setAttribute("aria-pressed", on ? "true" : "false");
+      n.classList.toggle("sel", on); n.setAttribute("aria-expanded", on ? "true" : "false");
     });
-    var c = C[lang].certs[i - 1];
-    if (c) $("#certDetail").innerHTML = '<div class="year">' + esc(c.year || "+") + "</div><div><h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p></div>";
+    if (!i) { popEl.classList.remove("open"); popEl.setAttribute("aria-hidden", "true"); return; }
+    popEl.innerHTML = '<button class="pop-close" type="button" aria-label="' + esc(ui().d_close) + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>' +
+      (c.year ? '<span class="pop-year">' + esc(c.year) + "</span>" : "") +
+      "<h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p>";
+    popEl.removeAttribute("aria-hidden");
+    popEl.classList.remove("open");
+    placePop();
+    void popEl.offsetWidth;                     /* restart the opening animation */
+    popEl.classList.add("open");
+  }
+  function placePop() {
+    if (!circ.sel || !popEl) return;
+    var w = circuitEl.clientWidth, h = circuitEl.clientHeight, m = 12;
+    var p = circ.pos[circ.sel], x = p.fx * w, y = p.fy * h;
+    var pw = popEl.offsetWidth, ph = popEl.offsetHeight, left, top, origin;
+    if (w >= pw * 2 + 140) {                     /* wide: beside the device, on the side with more room */
+      var right = p.fx < .5;
+      left = right ? x + 56 : x - 56 - pw;
+      top = y - ph / 2;
+      origin = right ? "left center" : "right center";
+    } else {                                     /* narrow: below or above the device */
+      var below = p.fy < .5;
+      left = x - pw / 2;
+      top = below ? y + 64 : y - 64 - ph;
+      origin = below ? "center top" : "center bottom";
+    }
+    popEl.style.left = Math.max(m, Math.min(w - pw - m, left)) + "px";
+    popEl.style.top = Math.max(m, Math.min(h - ph - m, top)) + "px";
+    popEl.style.transformOrigin = origin;
   }
   (function () {
     var drag = null;
@@ -965,7 +1002,7 @@ var ART = {
     function end() {
       if (!drag) return;
       drag.n.classList.remove("drag");
-      if (!drag.moved && drag.i > 0) selectCert(drag.i);
+      if (!drag.moved && drag.i > 0) selectCert(circ.sel === drag.i ? 0 : drag.i);   /* click again to close */
       drag = null;
     }
     nodesEl.addEventListener("pointerup", end);
@@ -973,7 +1010,22 @@ var ART = {
     nodesEl.addEventListener("click", function (e) {
       if (e.detail !== 0) return;               /* keyboard activation only */
       var n = e.target.closest ? e.target.closest(".cert") : null;
-      if (n) selectCert(+n.getAttribute("data-n"));
+      if (n) { var k = +n.getAttribute("data-n"); selectCert(circ.sel === k ? 0 : k); }
+    });
+    /* close: the × button, a click on the empty board, or Escape */
+    circuitEl.addEventListener("click", function (e) {
+      var t = e.target;
+      if (t.closest(".pop-close")) {
+        var n = $('.cert[data-n="' + circ.sel + '"]', nodesEl);
+        selectCert(0);
+        if (n) n.focus();
+      } else if (!t.closest(".node") && !t.closest(".cert-pop")) selectCert(0);
+    });
+    circuitEl.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" || !circ.sel) return;
+      var n = $('.cert[data-n="' + circ.sel + '"]', nodesEl);
+      selectCert(0);
+      if (n) n.focus();
     });
     window.addEventListener("resize", layoutCircuit);
     new IntersectionObserver(function (en) { circ.vis = en[0].isIntersecting; if (circ.vis) circStart(); }, { threshold: 0 }).observe(circuitEl);
