@@ -6,7 +6,7 @@
       shots example: [{ src: "images/pollution-1.png", alt: "Report form" }]
    3. CERTIFICATIONS: add an entry to "certs" in each language (the carousel adapts).
    ===================================================================== */
-var LINKS = { github: "https://github.com/seisaww", gitlab: "https://gitlab.com/laazibiimane101", linkedin: "https://www.linkedin.com/in/imane-l-827170275/", cv: "candidature/CV-LAAZIBI_Imane.pdf", letter: "candidature/CL-LAAZIBI_Imane.pdf" };   /* paste your GitLab and LinkedIn URLs here */
+var LINKS = { github: "https://github.com/seisaww", gitlab: "https://gitlab.com/laazibiimane101", linkedin: "https://www.linkedin.com/in/imane-l-827170275/", cv: "candidature/CV-Imane_LAAZIBI.pdf", letter: "candidature/CL-Imane_LAAZIBI.pdf" };   /* paste your GitLab and LinkedIn URLs here */
 var EMAIL = "laazibiimane101@gmail.com";
 
 var PROJECT_META = [
@@ -14,7 +14,7 @@ var PROJECT_META = [
     repo: "https://github.com/CNAM-A1-Pacman/Pacman", cover: "",
     shots: [
       { src: "images/unity/unity3.png", alt: { fr: "Partie en cours", en: "Game in progress" } },
-      { src: "images/unity/unity2.png", alt: { fr: "Configuration de la partie et pilote auto (IA)", en: "Game settings and AI autopilot" } },
+      { src: "images/unity/unity2.png", alt: { fr: "Configuration de la partie et pilote automatique (IA)", en: "Game settings and AI autopilot" } },
       { src: "images/unity/unity1.png", alt: { fr: "Éditeur de cartes", en: "Map editor" } }
     ] },
   { key: "alcateams", art: "network", tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Docker"],
@@ -52,7 +52,7 @@ var PROJECT_META = [
   { key: "appcredit", art: "coins", tech: ["C#", "VB.NET", "Windows Forms", "SQL Server"],
     repo: "https://github.com/seisaww/AppCredit", cover: "",
     shots: [
-      { src: "images/appcredit/appcredit1.png", alt: { fr: "Enregistrement des crédits", en: "Saving credits" } },
+      { src: "images/appcredit/appcredit1.png", alt: { fr: "Enregistrement des crédits", en: "Saving loans" } },
       { src: "images/appcredit/appcredit2.png", alt: { fr: "Calcul de la mensualité", en: "Monthly payment calculation" } }
     ] }
 ];
@@ -63,23 +63,23 @@ var PROJECT_META = [
 var C = {
   en: {
     title: "Imane Laazibi | Computer science engineering student",
-    desc: "Portfolio of Imane Laazibi, computer science engineering student (CNAM Grand Est) and Data & BI Engineer at Domial.",
+    desc: "Portfolio of Imane Laazibi, a computer science engineering student (CNAM Grand Est) and work-study Data & BI Engineer at Domial.",
     ui: {
       skip: "Skip to content",
       nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Switch between dark and light theme", lang_btn: "FR", lang_aria: "Passer le site en français",
       hero_role: "Computer science engineering student.",
-      hero_intro: "As a Data & BI Engineer at Domial on a work-study contract, I build BI reports for the company's different business teams, set up data quality controls and put a data architecture in place in our data warehouse (DWH). Alongside, I'm working toward my engineering degree at CNAM Grand Est.",
-      hero_status: "Looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October .",
+      hero_intro: "As a work-study Data & BI Engineer at Domial, I design BI reports for the company's business teams, set up data quality controls and build the data architecture of our data warehouse (DWH). Alongside this, I am studying for my engineering degree at CNAM Grand Est.",
+      hero_status: "Looking for an internship abroad (9 weeks minimum, in English or French) in data, software development or IT support, from July to October 2027.",
       cta_projects: "See my projects", cta_contact: "Get in touch",
-      about_title: "How I met computer science",
-      about_p1: "I did an STMG baccalaureate with a marketing option, with a mention assez bien. I enjoyed the Python we did in maths class, so I headed to a BTS in software development (SIO, SLAM option) with no background in computing, and graduated.",
-      about_p2: "That result opened the door to the engineering programme at CNAM Grand Est, which I follow on a work-study basis. At Domial, I build BI reports for the different business teams, set up data quality controls and put a data architecture in place in our DWH.",
+      about_title: "How I got into computer science",
+      about_p1: "I earned an STMG baccalaureate (management and business track, marketing option) with honours. I enjoyed the Python we did in maths class, so I went on to a BTS SIO (SLAM option), a two-year degree in software development, with no prior background in computing.",
+      about_p2: "This degree opened the door to the engineering programme at CNAM Grand Est, which I am following as a work-study student. At Domial, I build BI reports for the company's business teams, set up data quality controls and handle data governance.",
       facts_title: "Currently",
       facts: [
-        ["Studying", "Engineering degree in Computer Science, Information Systems track (2025 to 2028)"],
-        ["Working", "Data & BI Engineer, work-study at Domial (Colmar)"],
-        ["Languages", "French (native), English (B2 to C1)"],
+        ["Studying", "Engineering degree in Computer Science, Information Systems track (2025–2028)"],
+        ["Working", "Data & BI Engineer (work-study) at Domial, Colmar"],
+        ["Languages", "French (native), English (B2–C1)"],
         ["Based in", "Strasbourg, France"]
       ],
       tl_title: "Experience and education",
@@ -89,7 +89,7 @@ var C = {
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon", lb_close: "Close", lb_prev: "Previous screenshot", lb_next: "Next screenshot", lb_open: "Enlarge screenshot",
       certs_title: "Certifications",
       contact_title: "Let's talk",
-      contact_intro: "I'm looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2027. Send me a message or find me through the links below.",
+      contact_intro: "I am looking for an internship abroad (9 weeks minimum, in English or French) in data, software development or IT support, from July to October 2027. Send me a message or find me through the links below.",
       f_name: "Name", f_email: "Email", f_msg: "Message", f_send: "Send message",
       f_ok: "Message sent. I'll get back to you as soon as I can.",
       f_fallback: "The message couldn't be sent directly, so your email app will open instead.",
@@ -97,16 +97,16 @@ var C = {
       circuit_hint: "Drag the devices around, or select one to see its details."
     },
     timeline: [
-      { date: "Aug 2025 to present", title: "Data & BI Engineer (work-study)", where: "Domial, Colmar", bullets: [
-        "Designing BI reports for the company's different business teams.",
+      { date: "Aug 2025 – present", title: "Data & BI Engineer (work-study)", where: "Domial, Colmar", bullets: [
+        "Designing BI reports for the company's business teams.",
         "Setting up data quality controls.",
-        "Putting a data architecture in place in our data warehouse (DWH).",
-        "Led a year-long migration of data integration workflows from Qlik to Talend (ETL), with metadata-driven jobs."
+        "Building the data architecture of our data warehouse (DWH).",
+        "Led a year-long migration of data integration workflows from Qlik to Talend (ETL), using metadata-driven jobs."
       ] },
-      { date: "2025 to 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
-      { date: "Jan to Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website with WordPress and Elementor." },
-      { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg" },
-      { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business track", text: "Passed with a mention assez bien." }
+      { date: "2025 – 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
+      { date: "Jan – Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website using WordPress and Elementor." },
+      { date: "2023 – 2025", title: "BTS SIO, SLAM option (two-year higher national diploma in software development)", where: "Lycée René Cassin, Strasbourg" },
+      { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business technology track", text: "Passed with honours (mention assez bien)." }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data warehouse (DWH)", "Stored procedures", "Data quality", "Data governance"] },
@@ -118,76 +118,76 @@ var C = {
     ],
     projects: {
       alcateams: {
-        name: "ALCATeams", kind: "Team project, 8 people, for Alcatel",
+        name: "ALCATeams", kind: "Team project for Alcatel, 8 people",
         desc: "An enterprise social network that extends Alcatel's Rainbow collaboration platform.",
-        context: "Project carried out for Alcatel. The goal was to extend Rainbow with an enterprise social network, where employees are organised into communities and can exchange and search messages.",
-        role: "Member of a team of eight. I mainly worked on the communities: member roles and sub-groups.",
-        features: ["Communities with member roles and sub-groups", "Messages synchronised with Rainbow", "Full-text message search with Meilisearch", "Back end with a PostgreSQL database managed through Prisma, running in Docker"]
+        context: "Project carried out for Alcatel. The goal was to extend Rainbow with an enterprise social network in which employees are grouped into communities where they can exchange and search messages.",
+        role: "As one of eight team members, I mainly worked on the communities: member roles and sub-groups.",
+        features: ["Communities with member roles and sub-groups", "Messages synchronised with Rainbow", "Full-text message search with Meilisearch", "Back end with a PostgreSQL database managed with Prisma and running in Docker"]
       },
       pollution: {
         name: "Air pollution reporting app", kind: "Individual project",
         desc: "A full-stack web app for reporting air pollution incidents, with user accounts and favourites.",
-        context: "Academic project. The goal was to build a complete application, from the interface to the database, where users can report pollution incidents and have them stored in a structured way.",
+        context: "Academic project. The goal was to build a complete application, from the user interface to the database, where users can report pollution incidents that are then stored in a structured way.",
         role: "Individual project: I designed and built the whole application, from the Angular interface to the Node.js API and the PostgreSQL database.",
         features: [
-          "Report pollution incidents, then browse them in a list with a detail page",
+          "Report pollution incidents and browse them in a list with a detail page",
           "Sign-up and login with JWT authentication and passwords hashed with bcrypt",
           "Protected pages (Angular route guard) and an HTTP interceptor that adds the token to every request",
-          "Favourite reports managed with NGXS and kept between sessions",
-          "REST API in Node.js and Express, with Sequelize on PostgreSQL"
+          "Favourite reports managed with NGXS and kept across sessions",
+          "REST API built with Node.js and Express, using Sequelize with PostgreSQL"
         ]
       },
       boards: {
         name: "Board game platform", kind: "Team project, 4 people",
         desc: "A C++ and Qt platform with four board games, where you can play against a friend, against an AI, or watch two AIs play each other.",
-        context: "Academic team project in C++. The goal was to build a single platform for several board games, designed with object-oriented principles and SOLID so that a new game can be added without changing the rest of the code.",
-        role: "Member of a team of four. I developed the checkers game and the save system (saving, serialising and loading games), and worked on refactoring and code quality.",
+        context: "Academic team project in C++. The goal was to bring several board games together in a single platform, designed with object-oriented principles and SOLID so that a new game could be added without changing the rest of the code.",
+        role: "As one of four team members, I developed the checkers game and the save system (saving, serialising and loading games), and contributed to refactoring and code quality.",
         features: [
           "Four games: tic-tac-toe, Connect 4, Othello and checkers",
           "Three modes: player vs player, player vs AI and AI vs AI",
-          "AI opponents built on interchangeable strategies (Strategy pattern)",
-          "Save a game at any moment and load it later from the menu",
+          "AI opponents based on interchangeable strategies (Strategy pattern)",
+          "Save a game at any time and resume it later from the menu",
           "A Qt graphical interface and a console version sharing the same game engine"
         ]
       },
       pacmanc: {
         name: "Pac-Man in C", kind: "Pair project in C",
         desc: "A Pac-Man game written in C with SDL2, following the rules of the original arcade version.",
-        context: "The goal was to rebuild Pac-Man in C by following the rules of the 1980 arcade game, based on a written development plan covering the maze, the scoring and the ghost behaviour.",
-        role: "Project in a pair. I focused on the game logic and the code (map, entities, ghost AI, scoring) rather than on the sprites.",
-        features: ["Maze with warp tunnels, pellets and power pellets", "Ghost AI with alternating scatter and chase modes", "Lives, scoring and bonus fruits that change with the level", "Rendering and sound with SDL2"]
+        context: "The goal was to rebuild Pac-Man in C following the rules of the original 1980 arcade game, based on a written development plan covering the maze, scoring and ghost behaviour.",
+        role: "Pair project. I focused on the game logic and code (map, entities, ghost AI, scoring) rather than on the sprites.",
+        features: ["Maze with warp tunnels, pellets and power pellets", "Ghost AI alternating between scatter and chase modes", "Lives, scoring and bonus fruits that change with each level", "Graphics and sound with SDL2"]
       },
       pacman: {
         name: "Pac-Man in Unity", kind: "Team project, 4 people",
-        desc: "A Pac-Man game in Unity, with an AI trained over several months to play in place of the player, and adjustable difficulty.",
-        context: "Academic team project over the year. The goal was to recreate Pac-Man in Unity and C#, then go further: a configuration menu, a map editor and an AI that learns to play the game by itself through reinforcement learning.",
-        role: "Member of a team of four. I first built the Pac-Man character and its movement, then mainly developed the ghosts: their distinct chase behaviours (ambusher, flanker), the scatter, frightened and home modes, and the refactoring of their code.",
+        desc: "A Pac-Man game built in Unity, with an AI trained over several months to play in the player's place, and adjustable difficulty.",
+        context: "Year-long academic team project. The goal was to recreate Pac-Man with Unity and C#, then take it further with a settings menu, a map editor and an AI that learns to play on its own through reinforcement learning.",
+        role: "As one of four team members, I first built the Pac-Man character and its movement, then mainly developed the ghosts: their distinct chase behaviours (ambusher, flanker), the scatter, frightened and return-home modes, and the refactoring of their code.",
         features: [
-          "An AI built with Unity ML-Agents (PPO), trained over several months, that plays Pac-Man in place of the player",
-          "Configuration screen: speed of Pac-Man and of the ghosts, power pellet duration, ghost release time and active ghosts, with an estimated difficulty (easy, normal, hard) and an AI autopilot switch",
-          "Four ghosts with their own movement behaviour, based on nodes placed at the maze intersections",
-          "A map editor that saves and loads mazes, with two playable maps",
-          "Score, rounds, lives and a Game Over screen to start again"
+          "An AI built with Unity ML-Agents (PPO) and trained over several months, which plays Pac-Man in the player's place",
+          "Settings screen: Pac-Man and ghost speed, power pellet duration, ghost release time and active ghosts, with an estimated difficulty level (easy, normal, hard) and an AI autopilot toggle",
+          "Four ghosts, each with its own movement behaviour, based on nodes placed at maze intersections",
+          "A map editor to save and load mazes, with two playable maps",
+          "Score, rounds, lives and a Game Over screen to play again"
         ]
       },
       appcredit: {
-        name: "AppCredit", kind: "Team project, 4 people, as project lead",
-        desc: "A Windows loan simulator that calculates monthly payments and saves credits in a SQL Server database.",
-        context: "The goal was to build a desktop application that simulates a loan from its amount, duration and annual rate, then records the credit and its client in a database.",
-        role: "Project lead of a team of four: I organised the work and the deliverables, and took part in the development of the application and the database.",
+        name: "AppCredit", kind: "Team project, 4 people, project lead",
+        desc: "A Windows loan simulator that calculates monthly payments and stores loans in a SQL Server database.",
+        context: "The goal was to build a desktop application that simulates a loan based on its amount, term and annual interest rate, then saves the loan and its client in a database.",
+        role: "Project lead for a team of four: I organised the work and the deliverables, and contributed to developing the application and the database.",
         features: [
-          "Monthly payment calculation from the amount, duration and annual rate (VB.NET class library)",
-          "A Windows Forms window to review and register credits",
-          "A SQL Server stored procedure that creates the client if needed and rejects credits of 60,000 or more, inside a transaction"
+          "Monthly payment calculation based on the amount, term and annual interest rate (VB.NET class library)",
+          "A Windows Forms window to view and register loans",
+          "A SQL Server stored procedure that creates the client if needed and rejects loans of 60,000 or more, within a transaction"
         ]
       },
       androidgames: {
         name: "Android mini-games", kind: "Individual project, mobile app",
         desc: "An Android app in Kotlin and Jetpack Compose with two mini-games and a shared leaderboard.",
-        context: "Academic project to learn mobile development. The goal was to build an app with a game menu, two games developed during the practical sessions and a leaderboard saved on the phone.",
+        context: "Academic project to learn mobile development. The goal was to build an app with a game menu, two games developed during lab sessions and a leaderboard stored on the phone.",
         role: "Individual project: I designed and developed the whole application.",
         features: [
-          "Menu listing the games with a short description, and a nickname required to play",
+          "A menu listing the games with a short description, and a nickname required to play",
           "Timing game: stop the timer as close as possible to a target time, with a speed that changes with the score",
           "Word game: find the hidden word in a letter grid, with a hint and the best score saved",
           "Top 10 leaderboard stored locally with Room, with a reset button"
@@ -195,29 +195,29 @@ var C = {
       }
     },
     certs: [
-      { year: "2026", name: "Cisco Introduction to Modern AI", icon: "spark", text: "The foundations of modern artificial intelligence: how machine learning and generative AI work, how to use AI tools effectively, and their limits and responsible use." },
+      { year: "2026", name: "Cisco Introduction to Modern AI", icon: "spark", text: "The foundations of modern artificial intelligence: how machine learning and generative AI work, how to use AI tools effectively, their limitations and responsible use." },
       { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "API development, network automation, Python and DevOps tools (Git, REST, JSON)." },
       { year: "2024", name: "Cisco IT Essentials", icon: "cpu", text: "Computer hardware and maintenance: assembling and upgrading PCs, installing and configuring operating systems, networking basics and troubleshooting." },
       { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Cybersecurity fundamentals: threats and attack techniques, data protection and confidentiality, securing an organisation." },
       { year: "2023", name: "Learnathon", icon: "flag", text: "An intensive cybersecurity training marathon, completed in October 2023." },
-      { year: "2023", name: "SecNumacadémie", icon: "lock", text: "ANSSI's online course on information security: the cyber threat landscape, authentication and passwords, safe internet use and protecting devices." }
+      { year: "2023", name: "SecNumacadémie", icon: "lock", text: "The online course of ANSSI (the French national cybersecurity agency) on information security: the cyber threat landscape, authentication and passwords, safe internet use and device protection." }
     ]
   },
 
   fr: {
     title: "Imane Laazibi | Étudiante ingénieure en informatique",
-    desc: "Portfolio d'Imane Laazibi, étudiante ingénieure en informatique (CNAM Grand Est) et Ingénieure Data & BI chez Domial.",
+    desc: "Portfolio d'Imane Laazibi, étudiante ingénieure en informatique (CNAM Grand Est) et ingénieure Data & BI en alternance chez Domial.",
     ui: {
       skip: "Aller au contenu",
       nav_home: "Accueil", nav_about: "À propos", nav_skills: "Compétences", nav_projects: "Projets", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Basculer entre le thème sombre et le thème clair", lang_btn: "EN", lang_aria: "Switch the site to English",
       hero_role: "Étudiante ingénieure en informatique.",
-      hero_intro: "Ingénieure Data & BI chez Domial en alternance, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH. En parallèle, je prépare mon diplôme d'ingénieure au CNAM Grand Est.",
-      hero_status: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2027.",
+      hero_intro: "Ingénieure Data & BI en alternance chez Domial, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et je construis l'architecture de notre entrepôt de données (DWH). En parallèle, je prépare mon diplôme d'ingénieure au CNAM Grand Est.",
+      hero_status: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data, en développement logiciel ou en support informatique, de juillet à octobre 2027.",
       cta_projects: "Voir mes projets", cta_contact: "Me contacter",
-      about_title: "Comment j'ai rencontré l'informatique",
-      about_p1: "J'ai passé un bac STMG option marketing, avec mention assez bien. J'ai beaucoup aimé le Python que nous faisions en mathématiques, alors je me suis dirigée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique, et je l'ai obtenu.",
-      about_p2: "Ce résultat m'a ouvert les portes du cycle ingénieur au CNAM Grand Est, que je suis en alternance. Chez Domial, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH.",
+      about_title: "Comment j'ai découvert l'informatique",
+      about_p1: "J'ai obtenu un bac STMG option marketing avec mention assez bien. J'ai pris goût au Python que nous faisions en cours de mathématiques, et je me suis donc orientée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique.",
+      about_p2: "Ce diplôme m'a ouvert les portes du cycle ingénieur du CNAM Grand Est en alternance. Chez Domial, je développe des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et j'assure leur gouvernance.",
       facts_title: "Actuellement",
       facts: [
         ["En formation", "Cycle ingénieur en informatique, option Systèmes d'information (2025 à 2028)"],
@@ -232,7 +232,7 @@ var C = {
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir", lb_close: "Fermer", lb_prev: "Capture précédente", lb_next: "Capture suivante", lb_open: "Agrandir la capture",
       certs_title: "Certifications",
       contact_title: "Échangeons",
-      contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2027. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
+      contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data, en développement logiciel ou en support informatique, de juillet à octobre 2027. Écrivez-moi ou retrouvez-moi grâce aux liens ci-dessous.",
       f_name: "Nom", f_email: "E-mail", f_msg: "Message", f_send: "Envoyer le message",
       f_ok: "Message envoyé. Je vous répondrai dès que possible.",
       f_fallback: "L'envoi direct a échoué : votre application de messagerie va s'ouvrir.",
@@ -243,29 +243,29 @@ var C = {
       { date: "Depuis août 2025", title: "Ingénieure Data & BI en alternance", where: "Domial, Colmar", bullets: [
         "Conception de rapports BI pour les différents métiers de l'entreprise.",
         "Mise en place de contrôles de qualité des données.",
-        "Mise en place d'une architecture de la donnée dans notre DWH.",
-        "Pilotage d'une migration d'un an des flux d'intégration de données de Qlik vers Talend (ETL), avec des jobs pilotés par les métadonnées."
+        "Contribution à la conception de l'architecture de notre entrepôt de données (DWH).",
+        "Pilotage de la migration, sur un an, des flux d'intégration de données de Qlik vers Talend (ETL), avec des jobs basés sur les métadonnées."
       ] },
       { date: "2025 à 2028 (prévu)", title: "Cycle ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
-      { date: "Janv. à févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
+      { date: "Janv. – févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
       { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg" },
       { date: "Avant 2023", title: "Baccalauréat STMG, option marketing", where: "Sciences et technologies du management et de la gestion", text: "Obtenu avec mention assez bien." }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Entrepôt de données (DWH)", "Procédures stockées", "Qualité des données", "Gouvernance des données"] },
       { g: "Programmation", items: ["Python", "C#", "VB.NET", "C", "C++", "Kotlin", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
-      { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns", "Gestion de projet"] },
-      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
+      { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns"] },
+      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
       { g: "Applications et jeux", items: ["Windows Forms", "Qt", "Unity", "Unity ML-Agents", "SDL2"] },
-      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
+      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Gestion de projet", "Packet Tracer"] }
     ],
     projects: {
       alcateams: {
         name: "ALCATeams", kind: "Projet d'équipe, 8 personnes, pour Alcatel",
         desc: "Un réseau social d'entreprise qui étend la plateforme collaborative Rainbow d'Alcatel.",
-        context: "Projet réalisé pour Alcatel. L'objectif était d'étendre Rainbow avec un réseau social d'entreprise, où les employés sont organisés en communautés et peuvent échanger et rechercher des messages.",
-        role: "Membre d'une équipe de huit personnes. Je me suis surtout occupée des communautés : rôles des membres et sous-groupes.",
-        features: ["Communautés avec rôles pour les membres et sous-groupes", "Messages synchronisés avec Rainbow", "Recherche plein texte dans les messages avec Meilisearch", "Back end avec une base PostgreSQL gérée via Prisma, exécutée dans Docker"]
+        context: "Projet réalisé pour Alcatel. L'objectif était d'étendre Rainbow avec un réseau social d'entreprise, où les employés sont regroupés en communautés dans lesquelles ils peuvent échanger des messages et y faire des recherches.",
+        role: "Au sein d'une équipe de huit personnes, je me suis surtout occupée des communautés : rôles des membres et sous-groupes.",
+        features: ["Communautés avec rôles des membres et sous-groupes", "Messages synchronisés avec Rainbow", "Recherche plein texte dans les messages avec Meilisearch", "Back-end avec une base PostgreSQL gérée avec Prisma et exécutée dans Docker"]
       },
       pollution: {
         name: "Application de signalement de la pollution de l'air", kind: "Projet individuel",
@@ -284,31 +284,31 @@ var C = {
         name: "Plateforme de jeux de plateau", kind: "Projet d'équipe, 4 personnes",
         desc: "Une plateforme C++ et Qt de quatre jeux de plateau : on peut jouer contre un ami, contre une IA, ou regarder deux IA s'affronter.",
         context: "Projet académique en équipe, en C++. L'objectif était de réunir plusieurs jeux de plateau dans une seule plateforme, conçue avec la programmation orientée objet et les principes SOLID pour pouvoir ajouter un jeu sans modifier le reste du code.",
-        role: "Membre d'une équipe de quatre personnes. J'ai développé le jeu de dames et le système de sauvegarde (sauvegarde, sérialisation et chargement des parties), et j'ai participé au refactoring et à la qualité du code.",
+        role: "Au sein d'une équipe de quatre personnes, j'ai développé le jeu de dames et le système de sauvegarde (sauvegarde, sérialisation et chargement des parties), et j'ai participé au refactoring et à la qualité du code.",
         features: [
           "Quatre jeux : morpion, Puissance 4, Othello et dames",
           "Trois modes : joueur contre joueur, joueur contre IA et IA contre IA",
-          "Des IA basées sur des stratégies interchangeables (patron Strategy)",
-          "Sauvegarde d'une partie à tout moment et reprise plus tard depuis le menu",
+          "Des IA reposant sur des stratégies interchangeables (patron de conception Strategy)",
+          "Sauvegarde d'une partie à tout moment et reprise ultérieure depuis le menu",
           "Une interface graphique Qt et une version console qui partagent le même moteur de jeu"
         ]
       },
       pacmanc: {
         name: "Pac-Man en C", kind: "Projet en binôme, en C",
         desc: "Un jeu Pac-Man écrit en C avec SDL2, fidèle aux règles de la version arcade d'origine.",
-        context: "L'objectif était de reconstruire Pac-Man en C en suivant les règles du jeu d'arcade de 1980, à partir d'un plan de développement écrit couvrant le labyrinthe, le score et le comportement des fantômes.",
-        role: "Projet en binôme. Je me suis concentrée sur la logique du jeu et le code (carte, entités, IA des fantômes, score) plutôt que sur les sprites.",
-        features: ["Labyrinthe avec tunnels latéraux, pastilles et super-pastilles", "IA des fantômes alternant les modes dispersion et poursuite", "Vies, score et fruits bonus qui changent selon le niveau", "Affichage et son avec SDL2"]
+        context: "L'objectif était de reconstruire Pac-Man en C en suivant les règles du jeu d'arcade de 1980, à partir d'un plan de développement rédigé, qui couvrait le labyrinthe, le score et le comportement des fantômes.",
+        role: "Projet en binôme : je me suis concentrée sur la logique du jeu et le code (carte, entités, IA des fantômes, score) plutôt que sur les sprites.",
+        features: ["Labyrinthe avec tunnels latéraux, pastilles et super-pastilles", "IA des fantômes alternant entre les modes dispersion et poursuite", "Vies, score et fruits bonus qui changent à chaque niveau", "Affichage et son avec SDL2"]
       },
       pacman: {
         name: "Pac-Man sous Unity", kind: "Projet d'équipe, 4 personnes",
-        desc: "Un Pac-Man sous Unity, avec une IA entraînée pendant plusieurs mois pour jouer à la place du joueur, et une difficulté réglable.",
-        context: "Projet académique en équipe sur l'année. L'objectif était de recréer Pac-Man avec Unity et C#, puis d'aller plus loin : un menu de configuration, un éditeur de cartes et une IA qui apprend à jouer seule par apprentissage par renforcement.",
-        role: "Membre d'une équipe de quatre personnes. J'ai d'abord réalisé le personnage de Pac-Man et ses déplacements, puis j'ai principalement développé les fantômes : leurs comportements de poursuite distincts (embuscade, contournement), les modes dispersion, effrayé et retour à la maison, et le refactoring de leur code.",
+        desc: "Un Pac-Man développé sous Unity, avec une IA entraînée pendant plusieurs mois pour jouer à la place du joueur et une difficulté réglable.",
+        context: "Projet académique en équipe, mené sur toute l'année. L'objectif était de recréer Pac-Man avec Unity et C#, puis d'aller plus loin : un menu de configuration, un éditeur de cartes et une IA qui apprend à jouer seule grâce à l'apprentissage par renforcement.",
+        role: "Au sein d'une équipe de quatre personnes, j'ai d'abord réalisé le personnage de Pac-Man et ses déplacements, puis j'ai principalement développé les fantômes : leurs comportements de poursuite distincts (embuscade, contournement), les modes dispersion, effrayé et retour au repaire, ainsi que le refactoring de leur code.",
         features: [
-          "Une IA réalisée avec Unity ML-Agents (PPO), entraînée pendant plusieurs mois, qui joue à Pac-Man à la place du joueur",
-          "Écran de configuration : vitesse de Pac-Man et des fantômes, durée des super-pastilles, temps en prison des fantômes et fantômes actifs, avec une difficulté estimée (facile, normal, difficile) et un interrupteur pilote auto (IA)",
-          "Quatre fantômes au comportement propre, basé sur des nœuds placés aux intersections du labyrinthe",
+          "Une IA conçue avec Unity ML-Agents (PPO) et entraînée pendant plusieurs mois, qui joue à Pac-Man à la place du joueur",
+          "Écran de configuration : vitesse de Pac-Man et des fantômes, durée des super-pastilles, délai de sortie des fantômes et choix des fantômes actifs, avec une estimation de la difficulté (facile, normal, difficile) et une option de pilote automatique (IA)",
+          "Quatre fantômes ayant chacun leur propre comportement, basé sur des nœuds placés aux intersections du labyrinthe",
           "Un éditeur de cartes avec sauvegarde et chargement des labyrinthes, et deux cartes jouables",
           "Score, manches, vies et écran de Game Over pour recommencer"
         ]
@@ -317,11 +317,11 @@ var C = {
         name: "AppCredit", kind: "Projet d'équipe, 4 personnes, cheffe de projet",
         desc: "Un simulateur de prêt pour Windows qui calcule les mensualités et enregistre les crédits dans une base SQL Server.",
         context: "L'objectif était de réaliser une application de bureau qui simule un prêt à partir de son montant, de sa durée et de son taux annuel, puis enregistre le crédit et son client dans une base de données.",
-        role: "Cheffe de projet d'une équipe de quatre personnes : j'ai organisé le travail et les livrables, et j'ai participé au développement de l'application et de la base de données.",
+        role: "Cheffe de projet d'une équipe de quatre personnes : j'ai organisé le travail et les livrables, et participé au développement de l'application et de la base de données.",
         features: [
           "Calcul de la mensualité à partir du montant, de la durée et du taux annuel (bibliothèque de classes VB.NET)",
           "Une fenêtre Windows Forms pour consulter et enregistrer les crédits",
-          "Une procédure stockée SQL Server qui crée le client si besoin et refuse les crédits de 60 000 ou plus, dans une transaction"
+          "Une procédure stockée SQL Server, exécutée dans une transaction, qui crée le client si nécessaire et refuse les crédits de 60 000 ou plus"
         ]
       },
       androidgames: {
@@ -330,19 +330,19 @@ var C = {
         context: "Projet académique pour découvrir le développement mobile. L'objectif était de réaliser une application avec un menu de jeux, deux jeux développés pendant les TP et un classement enregistré sur le téléphone.",
         role: "Projet individuel : j'ai conçu et développé toute l'application.",
         features: [
-          "Menu qui présente les jeux avec une courte description, et pseudo obligatoire pour jouer",
+          "Un menu qui présente les jeux avec une courte description, et un pseudo obligatoire pour jouer",
           "Jeu de précision : arrêter le chrono au plus près d'un temps cible, avec une vitesse qui varie selon le score",
           "Jeu de mots : retrouver le mot caché dans une grille de lettres, avec un indice et le meilleur score mémorisé",
-          "Classement des 10 meilleurs scores stocké en local avec Room, avec un bouton de réinitialisation"
+          "Classement des 10 meilleurs scores enregistré localement avec Room, avec un bouton de réinitialisation"
         ]
       }
     },
     certs: [
-      { year: "2026", name: "Cisco Introduction à l'IA moderne", icon: "spark", text: "Les bases de l'intelligence artificielle moderne : fonctionnement de l'apprentissage automatique et de l'IA générative, bonne utilisation des outils d'IA, leurs limites et un usage responsable." },
+      { year: "2026", name: "Cisco Introduction à l'IA moderne", icon: "spark", text: "Les bases de l'intelligence artificielle moderne : fonctionnement de l'apprentissage automatique et de l'IA générative, bonne utilisation des outils d'IA, leurs limites et leur usage responsable." },
       { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "Développement d'API, automatisation réseau, Python et outils DevOps (Git, REST, JSON)." },
       { year: "2024", name: "Cisco IT Essentials", icon: "cpu", text: "Matériel informatique et maintenance : assemblage et évolution de PC, installation et configuration de systèmes d'exploitation, bases des réseaux et dépannage." },
       { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Fondamentaux de la cybersécurité : menaces et techniques d'attaque, protection et confidentialité des données, sécurisation d'une organisation." },
-      { year: "2023", name: "Learnathon", icon: "flag", text: "Un marathon de formation intensive à la cybersécurité, réalisé en octobre 2023." },
+      { year: "2023", name: "Learnathon", icon: "flag", text: "Un marathon de formation intensive en cybersécurité, suivi en octobre 2023." },
       { year: "2023", name: "SecNumacadémie", icon: "lock", text: "Le MOOC de l'ANSSI sur la sécurité du numérique : panorama de la menace, authentification et mots de passe, sécurité sur Internet et protection des postes." }
     ]
   }
@@ -782,7 +782,7 @@ var ART = {
 
     function seed() {
       var n = Math.max(30, Math.min(90, Math.round(W * H / 17000)));
-      nodes = []; pulses = [];;
+      nodes = []; pulses = [];
       for (var i = 0; i < n; i++) nodes.push({
         x: Math.random() * W, y: Math.random() * H,
         vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3,
