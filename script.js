@@ -6,7 +6,7 @@
       shots example: [{ src: "images/pollution-1.png", alt: "Report form" }]
    3. CERTIFICATIONS: add an entry to "certs" in each language (the carousel adapts).
    ===================================================================== */
-var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv: "", letter: "" };
+var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv: "", letter: "" };   /* paste your GitLab and LinkedIn URLs here */
 var EMAIL = "laazibiimane101@gmail.com";
 
 var PROJECT_META = [
@@ -24,20 +24,20 @@ var PROJECT_META = [
    ===================================================================== */
 var C = {
   en: {
-    title: "Imane Laazibi | Data & software development",
+    title: "Imane Laazibi | Computer science engineering student",
     desc: "Portfolio of Imane Laazibi, computer science engineering student (CNAM Grand Est) and Data & BI Engineer at Domial.",
     ui: {
       skip: "Skip to content",
       nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Switch between dark and light theme", lang_btn: "FR", lang_aria: "Passer le site en français",
-      hero_role: "Computer science engineering student. Data and software development.",
+      hero_role: "Computer science engineering student.",
       hero_intro: "As a Data & BI Engineer at Domial on a work-study contract, I build BI reports for the company's different business teams, set up data quality controls and put a data architecture in place in our data warehouse (DWH). Alongside, I'm working toward my engineering degree at CNAM Grand Est.",
-      hero_status: "Looking for an internship of at least 9 weeks, in English or French, in data or software development, from July to October 2028.",
+      hero_status: "Looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2028.",
       cta_projects: "See my projects", cta_contact: "Get in touch",
       about_title: "How I met computer science",
-      about_p1: "I did an STMG baccalaureate with a marketing option. I enjoyed the Python we did in maths class, so I headed to a BTS in software development (SIO, SLAM option) with no background in computing, and graduated with an average of 16/20 in the exams.",
+      about_p1: "I did an STMG baccalaureate with a marketing option, with a mention assez bien. I enjoyed the Python we did in maths class, so I headed to a BTS in software development (SIO, SLAM option) with no background in computing, and graduated.",
       about_p2: "That result opened the door to the engineering programme at CNAM Grand Est, which I follow on a work-study basis. At Domial, I build BI reports for the different business teams, set up data quality controls and put a data architecture in place in our DWH.",
-      facts_title: "What I'm doing right now",
+      facts_title: "Currently",
       facts: [
         ["Studying", "Engineering degree in Computer Science, Information Systems track (2025 to 2028)"],
         ["Working", "Data & BI Engineer, work-study at Domial (Colmar)"],
@@ -51,11 +51,12 @@ var C = {
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon",
       certs_title: "Certifications",
       contact_title: "Let's talk",
-      contact_intro: "I'm looking for an internship of at least 9 weeks, in English or French, in data or software development, from July to October 2028. Send me a message or find me through the links below.",
+      contact_intro: "I'm looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2028. Send me a message or find me through the links below.",
       f_name: "Name", f_email: "Email", f_msg: "Message", f_send: "Send message",
       f_ok: "Message sent. I'll get back to you as soon as I can.",
       f_fallback: "The message couldn't be sent directly, so your email app will open instead.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter"
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter",
+      circuit_hint: "Drag the devices around, or select one to see its details."
     },
     timeline: [
       { date: "Aug 2025 to present", title: "Data & BI Engineer (work-study)", where: "Domial, Colmar", bullets: [
@@ -66,15 +67,16 @@ var C = {
       ] },
       { date: "2025 to 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
       { date: "Jan to Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website with WordPress and Elementor." },
-      { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg", text: "Graduated with an average of 16/20 in the exams." },
-      { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business track" }
+      { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg" },
+      { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business track", text: "Passed with a mention assez bien." }
     ],
     skills: [
-      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data quality", "Data governance"] },
-      { g: "Programming", items: ["Python", "C#", "VB.NET", "C / C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
-      { g: "Software design", items: ["Object-oriented design", "SOLID principles", "Design patterns"] },
-      { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Android", "WordPress", "CodeIgniter"] },
-      { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Unity", "Agile (Scrum)", "Packet Tracer"] }
+      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data warehouse (DWH)", "Stored procedures", "Data quality", "Data governance"] },
+      { g: "Programming", items: ["Python", "C#", "VB.NET", "C", "C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Software design", items: ["Object-oriented design", "SOLID principles", "Design patterns", "Project management"] },
+      { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "WordPress", "Elementor", "CodeIgniter"] },
+      { g: "Desktop & games", items: ["Windows Forms", "Unity", "SDL2"] },
+      { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
       alcateams: {
@@ -128,26 +130,29 @@ var C = {
       }
     },
     certs: [
-      { year: "2025", name: "Cisco DevNet Associate", text: "API development, network automation, Python and DevOps tools (Git, REST, JSON)." },
-      { year: "2024", name: "Cisco Cybersecurity Essentials", text: "Cybersecurity fundamentals: threats and attack techniques, data protection and confidentiality, securing an organisation." }
+      { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "API development, network automation, Python and DevOps tools (Git, REST, JSON)." },
+      { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Cybersecurity fundamentals: threats and attack techniques, data protection and confidentiality, securing an organisation." },
+      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." },
+      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." },
+      { year: "", name: "Coming soon", soon: true, text: "Another certification will be added here." }
     ]
   },
 
   fr: {
-    title: "Imane Laazibi | Data et développement logiciel",
+    title: "Imane Laazibi | Étudiante ingénieure en informatique",
     desc: "Portfolio d'Imane Laazibi, étudiante ingénieure en informatique (CNAM Grand Est) et Ingénieure Data & BI chez Domial.",
     ui: {
       skip: "Aller au contenu",
       nav_home: "Accueil", nav_about: "À propos", nav_skills: "Compétences", nav_projects: "Projets", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Basculer entre le thème sombre et le thème clair", lang_btn: "EN", lang_aria: "Switch the site to English",
-      hero_role: "Étudiante ingénieure en informatique. Data et développement logiciel.",
+      hero_role: "Étudiante ingénieure en informatique.",
       hero_intro: "Ingénieure Data & BI chez Domial en alternance, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH. En parallèle, je prépare mon diplôme d'ingénieure au CNAM Grand Est.",
-      hero_status: "Je recherche un stage de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028.",
+      hero_status: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028.",
       cta_projects: "Voir mes projets", cta_contact: "Me contacter",
       about_title: "Comment j'ai rencontré l'informatique",
-      about_p1: "J'ai passé un bac STMG option marketing. J'ai beaucoup aimé le Python que nous faisions en mathématiques, alors je me suis dirigée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique, et je l'ai obtenu avec 16/20 de moyenne aux examens.",
+      about_p1: "J'ai passé un bac STMG option marketing, avec mention assez bien. J'ai beaucoup aimé le Python que nous faisions en mathématiques, alors je me suis dirigée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique, et je l'ai obtenu.",
       about_p2: "Ce résultat m'a ouvert les portes du cycle ingénieur au CNAM Grand Est, que je suis en alternance. Chez Domial, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH.",
-      facts_title: "Ce que je fais en ce moment",
+      facts_title: "Actuellement",
       facts: [
         ["En formation", "Cycle ingénieur en informatique, option Systèmes d'information (2025 à 2028)"],
         ["En alternance", "Ingénieure Data & BI chez Domial (Colmar)"],
@@ -161,11 +166,12 @@ var C = {
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir",
       certs_title: "Certifications",
       contact_title: "Échangeons",
-      contact_intro: "Je recherche un stage de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
+      contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
       f_name: "Nom", f_email: "E-mail", f_msg: "Message", f_send: "Envoyer le message",
       f_ok: "Message envoyé. Je vous répondrai dès que possible.",
       f_fallback: "L'envoi direct a échoué : votre application de messagerie va s'ouvrir.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation"
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation",
+      circuit_hint: "Déplacez les appareils, ou sélectionnez-en un pour voir le détail."
     },
     timeline: [
       { date: "Depuis août 2025", title: "Ingénieure Data & BI en alternance", where: "Domial, Colmar", bullets: [
@@ -176,15 +182,16 @@ var C = {
       ] },
       { date: "2025 à 2028 (prévu)", title: "Cycle ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
       { date: "Janv. à févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
-      { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg", text: "Diplôme obtenu avec 16/20 de moyenne aux examens." },
-      { date: "Avant 2023", title: "Baccalauréat STMG, option marketing", where: "Sciences et technologies du management et de la gestion" }
+      { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg" },
+      { date: "Avant 2023", title: "Baccalauréat STMG, option marketing", where: "Sciences et technologies du management et de la gestion", text: "Obtenu avec mention assez bien." }
     ],
     skills: [
-      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Qualité des données", "Gouvernance des données"] },
-      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C / C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
-      { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns"] },
-      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Android", "WordPress", "CodeIgniter"] },
-      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Unity", "Agile (Scrum)", "Packet Tracer"] }
+      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Entrepôt de données (DWH)", "Procédures stockées", "Qualité des données", "Gouvernance des données"] },
+      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C", "C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns", "Gestion de projet"] },
+      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "WordPress", "Elementor", "CodeIgniter"] },
+      { g: "Applications et jeux", items: ["Windows Forms", "Unity", "SDL2"] },
+      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
       alcateams: {
@@ -238,8 +245,11 @@ var C = {
       }
     },
     certs: [
-      { year: "2025", name: "Cisco DevNet Associate", text: "Développement d'API, automatisation réseau, Python et outils DevOps (Git, REST, JSON)." },
-      { year: "2024", name: "Cisco Cybersecurity Essentials", text: "Fondamentaux de la cybersécurité : menaces et techniques d'attaque, protection et confidentialité des données, sécurisation d'une organisation." }
+      { year: "2025", name: "Cisco DevNet Associate", icon: "code", text: "Développement d'API, automatisation réseau, Python et outils DevOps (Git, REST, JSON)." },
+      { year: "2024", name: "Cisco Cybersecurity Essentials", icon: "shield", text: "Fondamentaux de la cybersécurité : menaces et techniques d'attaque, protection et confidentialité des données, sécurisation d'une organisation." },
+      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." },
+      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." },
+      { year: "", name: "À venir", soon: true, text: "Une autre certification sera ajoutée ici." }
     ]
   }
 };
@@ -344,12 +354,7 @@ var ART = {
     updateProjects();
   }
 
-  function renderCerts() {
-    $("#certTrack").innerHTML = C[lang].certs.map(function (c) {
-      return '<article class="cert" role="listitem"><div class="year">' + esc(c.year) + "</div><h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p></article>";
-    }).join("");
-    updateCerts();
-  }
+  function renderCerts() { renderCircuit(); }
 
   function renderLinks() {
     var u = ui();
@@ -469,7 +474,6 @@ var ART = {
   }
   var track = $("#track");
   var updateProjects = carousel(track, $("#prev"), $("#next"), $("#count"), ".card");
-  var updateCerts = carousel($("#certTrack"), $("#cprev"), $("#cnext"), $("#ccount"), ".cert");
 
   /* tilt on hover (mouse only) */
   if (finePointer && !reduce) {
@@ -481,6 +485,8 @@ var ART = {
       card.style.setProperty("--ry", (x * 7).toFixed(2) + "deg");
       card.style.setProperty("--rx", (-y * 7).toFixed(2) + "deg");
       card.style.setProperty("--ty", "-6px");
+      card.style.setProperty("--px", (e.clientX - r.left) + "px");
+      card.style.setProperty("--py", (e.clientY - r.top) + "px");
     });
     track.addEventListener("pointerout", function (e) {
       var card = e.target.closest ? e.target.closest(".card") : null;
@@ -576,7 +582,7 @@ var ART = {
 
   /* typed query line */
   (function () {
-    var el = $("#typed"), q = "SELECT * FROM talents WHERE name = 'Imane Laazibi';", i = 0;
+    var el = $("#typed"), q = "SELECT * FROM portfolio WHERE owner = 'Imane Laazibi';", i = 0;
     if (!el) return;
     if (reduce) { el.textContent = q; return; }
     setTimeout(function type() {
@@ -585,43 +591,49 @@ var ART = {
     }, 250);
   })();
 
-  /* spotlight follows the pointer */
+  /* ---------- pointer: spotlight, name parallax, magnetic buttons ---------- */
+  var nameEl = $("#name");
   if (finePointer && !reduce) {
-    hero.addEventListener("pointermove", function (e) {
-      var r = hero.getBoundingClientRect();
-      hero.style.setProperty("--mx", (e.clientX - r.left) + "px");
-      hero.style.setProperty("--my", (e.clientY - r.top) + "px");
-    });
+    var lastBtn = null;
+    window.addEventListener("pointermove", function (e) {
+      root.style.setProperty("--mx", e.clientX + "px");
+      root.style.setProperty("--my", e.clientY + "px");
+      var nx = e.clientX / window.innerWidth - .5, ny = e.clientY / window.innerHeight - .5;
+      nameEl.style.transform = "translate3d(" + (nx * -16).toFixed(1) + "px," + (ny * -10).toFixed(1) + "px,0)";
+      var b = e.target.closest ? e.target.closest(".btn") : null;
+      if (lastBtn && lastBtn !== b) { lastBtn.style.setProperty("--bx", "0px"); lastBtn.style.setProperty("--by", "0px"); }
+      lastBtn = b;
+      if (b) {
+        var r = b.getBoundingClientRect();
+        b.style.setProperty("--bx", ((e.clientX - r.left - r.width / 2) * .22).toFixed(1) + "px");
+        b.style.setProperty("--by", ((e.clientY - r.top - r.height / 2) * .3).toFixed(1) + "px");
+      }
+    }, { passive: true });
   }
 
-  /* data network canvas: nodes drift, link up, and react to the cursor */
+  /* ---------- page-wide data network (one background for every section) ---------- */
   (function () {
-    var cv = $("#heroCanvas");
+    var cv = $("#bgCanvas");
     if (!cv || !cv.getContext) return;
     var ctx = cv.getContext("2d");
-    var W = 0, H = 0, dpr = 1, nodes = [], mouse = { x: -999, y: -999, on: false };
-    var visible = true, raf = 0, accent = "#8B7CF6";
-    var LINK = 140;
+    var W = 0, H = 0, dpr = 1, nodes = [], pulses = [], mouse = { x: -999, y: -999, on: false };
+    var raf = 0, accent = "#8B7CF6", lastSpawn = 0, LINK = 150;
 
     function seed() {
-      var n = Math.max(28, Math.min(95, Math.round(W * H / 15000)));
+      var n = Math.max(30, Math.min(90, Math.round(W * H / 17000)));
       nodes = [];
-      for (var i = 0; i < n; i++) {
-        nodes.push({
-          x: Math.random() * W, y: Math.random() * H,
-          vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35,
-          r: Math.random() * 1.6 + 1, big: Math.random() < .12
-        });
-      }
+      for (var i = 0; i < n; i++) nodes.push({
+        x: Math.random() * W, y: Math.random() * H,
+        vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3,
+        r: Math.random() * 1.5 + 1, big: Math.random() < .12
+      });
     }
     function resize() {
-      var r = hero.getBoundingClientRect();
       dpr = Math.min(window.devicePixelRatio || 1, 2);
-      W = r.width; H = r.height;
+      W = window.innerWidth; H = window.innerHeight;
       cv.width = W * dpr; cv.height = H * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      seed();
-      draw();
+      seed(); draw();
     }
     function draw() {
       accent = getComputedStyle(root).getPropertyValue("--accent").trim() || accent;
@@ -633,34 +645,51 @@ var ART = {
         for (j = i + 1; j < nodes.length; j++) {
           b = nodes[j]; dx = a.x - b.x; dy = a.y - b.y; d = dx * dx + dy * dy;
           if (d < LINK * LINK) {
-            ctx.globalAlpha = (1 - Math.sqrt(d) / LINK) * .35;
-            ctx.lineWidth = 1;
+            ctx.globalAlpha = (1 - Math.sqrt(d) / LINK) * .3; ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
           }
         }
         if (mouse.on) {
           dx = a.x - mouse.x; dy = a.y - mouse.y; d = Math.sqrt(dx * dx + dy * dy);
-          if (d < 190) {
-            ctx.globalAlpha = (1 - d / 190) * .9;
-            ctx.lineWidth = 1.3;
+          if (d < 200) {
+            ctx.globalAlpha = (1 - d / 200) * .85; ctx.lineWidth = 1.3;
             ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
           }
         }
       }
       for (i = 0; i < nodes.length; i++) {
         a = nodes[i];
-        ctx.globalAlpha = a.big ? .95 : .6;
+        ctx.globalAlpha = a.big ? .9 : .55;
         ctx.shadowColor = accent; ctx.shadowBlur = a.big ? 14 : 0;
         ctx.beginPath(); ctx.arc(a.x, a.y, a.big ? a.r + 1.6 : a.r, 0, 6.2832); ctx.fill();
       }
+      /* data packets travelling along links */
+      ctx.shadowBlur = 12; ctx.globalAlpha = 1;
+      for (i = pulses.length - 1; i >= 0; i--) {
+        var p = pulses[i], A = nodes[p.a], B = nodes[p.b];
+        p.t += .018;
+        if (p.t >= 1) { pulses.splice(i, 1); continue; }
+        ctx.beginPath(); ctx.arc(A.x + (B.x - A.x) * p.t, A.y + (B.y - A.y) * p.t, 2.4, 0, 6.2832); ctx.fill();
+      }
       ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+    }
+    function spawn(now) {
+      if (now - lastSpawn < 260 || pulses.length > 14) return;
+      lastSpawn = now;
+      var a = Math.floor(Math.random() * nodes.length), A = nodes[a], best = -1, bd = LINK * LINK;
+      for (var j = 0; j < nodes.length; j++) {
+        if (j === a) continue;
+        var dx = A.x - nodes[j].x, dy = A.y - nodes[j].y, d = dx * dx + dy * dy;
+        if (d < bd && Math.random() < .35) { bd = d; best = j; }
+      }
+      if (best >= 0) pulses.push({ a: a, b: best, t: 0 });
     }
     function step() {
       for (var i = 0; i < nodes.length; i++) {
         var n = nodes[i];
         if (mouse.on) {
           var dx = mouse.x - n.x, dy = mouse.y - n.y, d = Math.sqrt(dx * dx + dy * dy);
-          if (d < 190 && d > 1) { n.vx += dx / d * .012; n.vy += dy / d * .012; }
+          if (d < 200 && d > 1) { n.vx += dx / d * .012; n.vy += dy / d * .012; }
         }
         n.vx *= .995; n.vy *= .995;
         var sp = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
@@ -670,23 +699,125 @@ var ART = {
         if (n.y < -10) n.y = H + 10; else if (n.y > H + 10) n.y = -10;
       }
     }
-    function loop() {
-      if (!visible || document.hidden) { raf = 0; return; }
-      step(); draw();
+    function loop(now) {
+      if (document.hidden) { raf = 0; return; }
+      step(); spawn(now); draw();
       raf = requestAnimationFrame(loop);
     }
     function start() { if (!raf && !reduce) raf = requestAnimationFrame(loop); }
-
-    hero.addEventListener("pointermove", function (e) {
-      var r = hero.getBoundingClientRect();
-      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.on = true;
-    });
-    hero.addEventListener("pointerleave", function () { mouse.on = false; });
+    window.addEventListener("pointermove", function (e) { mouse.x = e.clientX; mouse.y = e.clientY; mouse.on = true; }, { passive: true });
+    document.addEventListener("pointerleave", function () { mouse.on = false; });
     window.addEventListener("resize", resize);
     document.addEventListener("visibilitychange", start);
-    new IntersectionObserver(function (en) { visible = en[0].isIntersecting; if (visible) start(); }, { threshold: 0 }).observe(hero);
-    resize();
-    start();
+    resize(); start();
+  })();
+
+  /* ---------- certifications: a draggable, glowing network topology ---------- */
+  var circ = { pos: [], sel: 1, edges: [], packets: [], raf: 0, vis: false, last: 0 };
+  var CERT_POS = [[.2, .24], [.8, .24], [.16, .78], [.84, .78], [.5, .9]];
+  var EDGE_SET = [[1, 2], [1, 3], [2, 4], [3, 5], [4, 5]];
+  var ICONS = {
+    code: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+    badge: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg>',
+    plus: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>'
+  };
+  var circuitEl = $("#circuit"), nodesEl = $("#circNodes"), wiresEl = $("#wires");
+
+  function renderCircuit() {
+    var list = C[lang].certs, u = ui();
+    if (circ.pos.length !== list.length + 1) {
+      circ.pos = [{ fx: .5, fy: .5 }].concat(list.map(function (c, i) { var p = CERT_POS[i % CERT_POS.length]; return { fx: p[0], fy: p[1] }; }));
+      circ.sel = 1;
+    }
+    nodesEl.innerHTML = '<div class="node hub" data-n="0"><span class="dev"><b>IL</b></span><span class="nl">' + esc(u.certs_title) + "</span></div>" +
+      list.map(function (c, i) {
+        return '<button class="node cert' + (c.soon ? " soon" : "") + '" type="button" data-n="' + (i + 1) + '" aria-pressed="false">' +
+          '<span class="dev">' + ICONS[c.soon ? "plus" : (c.icon || "badge")] + '</span><span class="nl">' + esc(c.name) + "</span></button>";
+      }).join("");
+    circ.edges = list.map(function (c, i) { return [0, i + 1]; }).concat(EDGE_SET.filter(function (e) { return e[0] <= list.length && e[1] <= list.length; }));
+    wiresEl.innerHTML = circ.edges.map(function () { return '<line class="cable"/>'; }).join("") + circ.edges.map(function () { return '<circle class="pkt" r="3.5"/>'; }).join("");
+    circ.packets = circ.edges.map(function (e, i) { return { t: Math.random(), v: .14 + Math.random() * .12, dir: i % 2 ? 1 : -1 }; });
+    layoutCircuit();
+    selectCert(circ.sel);
+  }
+  function layoutCircuit() {
+    if (!circuitEl) return;
+    var w = circuitEl.clientWidth, h = circuitEl.clientHeight;
+    $$(".node", nodesEl).forEach(function (n) {
+      var p = circ.pos[+n.getAttribute("data-n")];
+      n.style.left = (p.fx * w) + "px"; n.style.top = (p.fy * h) + "px";
+    });
+    var lines = $$(".cable", wiresEl);
+    circ.edges.forEach(function (e, i) {
+      var a = circ.pos[e[0]], b = circ.pos[e[1]], l = lines[i];
+      if (!l) return;
+      l.setAttribute("x1", a.fx * w); l.setAttribute("y1", a.fy * h); l.setAttribute("x2", b.fx * w); l.setAttribute("y2", b.fy * h);
+    });
+    drawPackets();
+  }
+  function drawPackets() {
+    var w = circuitEl.clientWidth, h = circuitEl.clientHeight, dots = $$(".pkt", wiresEl);
+    circ.edges.forEach(function (e, i) {
+      var a = circ.pos[e[0]], b = circ.pos[e[1]], p = circ.packets[i], d = dots[i];
+      if (!d || !p) return;
+      var t = p.dir > 0 ? p.t : 1 - p.t;
+      d.setAttribute("cx", (a.fx + (b.fx - a.fx) * t) * w); d.setAttribute("cy", (a.fy + (b.fy - a.fy) * t) * h);
+    });
+  }
+  function circTick(now) {
+    if (!circ.vis || document.hidden) { circ.raf = 0; return; }
+    var dt = Math.min(.05, (now - circ.last) / 1000); circ.last = now;
+    circ.packets.forEach(function (p) { p.t = (p.t + p.v * dt) % 1; });
+    drawPackets();
+    circ.raf = requestAnimationFrame(circTick);
+  }
+  function circStart() { if (!circ.raf && circ.vis && !reduce) { circ.last = performance.now(); circ.raf = requestAnimationFrame(circTick); } }
+  function selectCert(i) {
+    if (i < 1) return;
+    circ.sel = i;
+    $$(".cert", nodesEl).forEach(function (n) {
+      var on = +n.getAttribute("data-n") === i;
+      n.classList.toggle("sel", on); n.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    var c = C[lang].certs[i - 1];
+    if (c) $("#certDetail").innerHTML = '<div class="year">' + esc(c.year || "+") + "</div><div><h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p></div>";
+  }
+  (function () {
+    var drag = null;
+    nodesEl.addEventListener("pointerdown", function (e) {
+      var n = e.target.closest ? e.target.closest(".node") : null;
+      if (!n) return;
+      var i = +n.getAttribute("data-n");
+      drag = { i: i, n: n, sx: e.clientX, sy: e.clientY, ox: circ.pos[i].fx, oy: circ.pos[i].fy, moved: false };
+      try { n.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    nodesEl.addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      var dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
+      if (!drag.moved && Math.sqrt(dx * dx + dy * dy) < 5) return;
+      drag.moved = true; drag.n.classList.add("drag");
+      var r = circuitEl.getBoundingClientRect(), p = circ.pos[drag.i];
+      p.fx = Math.min(.92, Math.max(.08, drag.ox + dx / r.width));
+      p.fy = Math.min(.9, Math.max(.1, drag.oy + dy / r.height));
+      layoutCircuit();
+    });
+    function end() {
+      if (!drag) return;
+      drag.n.classList.remove("drag");
+      if (!drag.moved && drag.i > 0) selectCert(drag.i);
+      drag = null;
+    }
+    nodesEl.addEventListener("pointerup", end);
+    nodesEl.addEventListener("pointercancel", end);
+    nodesEl.addEventListener("click", function (e) {
+      if (e.detail !== 0) return;               /* keyboard activation only */
+      var n = e.target.closest ? e.target.closest(".cert") : null;
+      if (n) selectCert(+n.getAttribute("data-n"));
+    });
+    window.addEventListener("resize", layoutCircuit);
+    new IntersectionObserver(function (en) { circ.vis = en[0].isIntersecting; if (circ.vis) circStart(); }, { threshold: 0 }).observe(circuitEl);
+    document.addEventListener("visibilitychange", circStart);
   })();
 
   renderAll();
