@@ -5,13 +5,17 @@
    2. PROJECTS: add "repo" (GitHub/GitLab URL) and "shots" (screenshots) below.
       shots example: [{ src: "images/pollution-1.png", alt: "Report form" }]
    ===================================================================== */
-var LINKS = { github: "", gitlab: "", linkedin: "", cv: "", letter: "" };
+var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv: "", letter: "" };
 var EMAIL = "laazibiimane101@gmail.com";
 
 var PROJECT_META = [
-  { key: "pollution", art: "rings", tech: ["Angular", "PostgreSQL"], repo: "", cover: "", shots: [] },
-  { key: "pacman",    art: "maze",  tech: ["C#", "Unity"],           repo: "", cover: "", shots: [] },
-  { key: "boards",    art: "board", tech: ["C++"],                   repo: "", cover: "", shots: [] }
+  { key: "alcateams",  art: "network", tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Docker"], repo: "https://github.com/alcateams/alcateams", cover: "", shots: [] },
+  { key: "pollution",  art: "rings",   tech: ["Angular", "PostgreSQL"],                 repo: "", cover: "", shots: [] },
+  { key: "boards",     art: "board",   tech: ["C++"],                                   repo: "", cover: "", shots: [] },
+  { key: "pacmanc",    art: "maze",    tech: ["C", "SDL2"],                             repo: "https://github.com/Pacman-C/Pacman", cover: "", shots: [] },
+  { key: "pacman",     art: "maze",    tech: ["C#", "Unity"],                           repo: "", cover: "", shots: [] },
+  { key: "appcredit",  art: "coins",   tech: ["C#", "VB.NET", "Windows Forms", "SQL Server"], repo: "https://github.com/seisaww/AppCredit", cover: "", shots: [] },
+  { key: "androidgames", art: "pad",   tech: ["Android Studio"],                        repo: "", cover: "", shots: [] }
 ];
 
 /* =====================================================================
@@ -26,12 +30,12 @@ var C = {
       nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Switch between dark and light theme", lang_btn: "FR", lang_aria: "Passer le site en français",
       hero_role: "Computer science engineering student. Data and software development.",
-      hero_intro: "I build reliable data pipelines and the applications that use them. Right now I work as a Data & BI Engineer at Domial, on a work-study programme, while completing my engineering degree at CNAM Grand Est.",
+      hero_intro: "I build reliable data pipelines and the applications that rely on them. I currently work as a Data & BI Engineer at Domial on a work-study contract, alongside my engineering degree at CNAM Grand Est.",
       hero_status: "Looking for a 9-week international internship in data or software development, from July to October 2028.",
       cta_projects: "See my projects", cta_contact: "Get in touch",
-      about_title: "My path into data",
-      about_p1: "I started in a management-oriented STMG track, with no background in computing. Discovering programming changed my direction, so I enrolled in a BTS in software development (SIO, SLAM option) and graduated with a 16 average in the exams.",
-      about_p2: "That result opened the door to the engineering programme at CNAM Grand Est, which I follow as a work-study student. At Domial I work with data every day: ETL migration, data quality, BI reporting and compliance.",
+      about_title: "How I got into data",
+      about_p1: "I started out in a management-focused STMG track, with no background in computing. Discovering programming changed my path: I enrolled in a BTS in software development (SIO, SLAM option) and graduated with an average of 16/20 in the exams.",
+      about_p2: "That result got me into the engineering programme at CNAM Grand Est, which I follow on a work-study basis. At Domial I work with data every day: ETL migration, data quality, BI reporting and compliance.",
       facts: [
         ["Studying", "Engineering degree in Computer Science, Information Systems track (2025 to 2028)"],
         ["Working", "Data & BI Engineer, work-study at Domial (Colmar)"],
@@ -39,60 +43,88 @@ var C = {
         ["Based in", "Strasbourg, France"]
       ],
       tl_title: "Experience and education",
-      skills_title: "What I work with",
+      skills_title: "Tools and skills",
       projects_title: "Selected projects",
       prev_aria: "Previous project", next_aria: "Next project", open_hint: "See details",
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon",
       certs_title: "Certifications",
       contact_title: "Let's talk",
-      contact_intro: "I'm looking for a 9-week international internship in data or software development, from July to October 2028. Send me a message, or find me through the links below.",
+      contact_intro: "I'm looking for a 9-week international internship in data or software development, from July to October 2028. Send me a message or find me through the links below.",
       f_name: "Name", f_email: "Email", f_msg: "Message", f_send: "Send message",
-      f_ok: "Message sent. I'll reply as soon as I can.",
-      f_fallback: "Couldn't send directly, so your email app will open instead.",
+      f_ok: "Message sent. I'll get back to you as soon as I can.",
+      f_fallback: "The message couldn't be sent directly, so your email app will open instead.",
       l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter",
       foot_done: "Pipeline complete.", foot_thanks: "Thanks for reading."
     },
     timeline: [
       { date: "Aug 2025 to present", title: "Data & BI Engineer (work-study)", where: "Domial, Colmar", bullets: [
         "Led a year-long migration of data integration workflows from Qlik to Talend (ETL).",
-        "Developed metadata-driven Talend jobs and scripts to automate and standardise data pipelines.",
-        "Ensured data quality by cleaning datasets and implementing automated controls that detect inconsistent data.",
-        "Designed and delivered BI reports for multiple business teams.",
-        "Contributed to data compliance, secure data storage and security best practices."
+        "Built metadata-driven Talend jobs and scripts to automate and standardise data pipelines.",
+        "Improved data quality by cleaning datasets and adding automated checks that flag inconsistent data.",
+        "Designed and delivered BI reports for several business teams.",
+        "Contributed to data compliance, secure storage and security best practices."
       ] },
       { date: "2025 to 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
-      { date: "Jan to Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website using WordPress and Elementor." },
-      { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg", text: "Graduated with a 16 average in the exams." },
-      { date: "Before 2023", title: "STMG track", where: "Management and business studies" }
+      { date: "Jan to Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website with WordPress and Elementor." },
+      { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg", text: "Graduated with an average of 16/20 in the exams." },
+      { date: "Before 2023", title: "STMG baccalaureate", where: "Management and business track" }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data quality", "Data governance"] },
-      { g: "Programming", items: ["Python", "C#", "C / C++", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Programming", items: ["Python", "C#", "VB.NET", "C / C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
       { g: "Software design", items: ["Object-oriented design", "SOLID principles", "Design patterns"] },
       { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Android", "WordPress", "CodeIgniter"] },
-      { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Unity", "Agile (Scrum)", "Packet Tracer"] }
+      { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Unity", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
+      alcateams: {
+        name: "ALCATeams", kind: "Project for Alcatel",
+        desc: "An enterprise social network that extends Alcatel's Rainbow collaboration platform.",
+        context: "Project carried out for Alcatel. The goal was to extend Rainbow with an enterprise social network, where employees are organised into communities and can exchange and search messages.",
+        role: "I took part in building the application as a member of a development team.",
+        features: ["Communities with member roles and sub-groups", "Messages synchronised with Rainbow", "Full-text message search with Meilisearch", "Back end with a PostgreSQL database managed through Prisma, running in Docker"]
+      },
       pollution: {
         name: "Air pollution reporting app", kind: "Individual project",
-        desc: "A full-stack web app where users report pollution incidents.",
-        context: "Academic project. The goal was to build a complete application, from the interface to the database, that lets users report pollution incidents and keeps them in a structured store.",
+        desc: "A full-stack web app for reporting air pollution incidents.",
+        context: "Academic project. The goal was to build a complete application, from the interface to the database, where users can report pollution incidents and have them stored in a structured way.",
         role: "Individual project: I designed and built the whole application, from the Angular interface to the PostgreSQL database.",
         features: ["Users report pollution incidents", "Reports are stored in a PostgreSQL database"]
       },
+      boards: {
+        name: "Board game platform", kind: "Team project, 4 people",
+        desc: "A C++ platform hosting several classic board games.",
+        context: "Academic team project. The goal was to implement several games using object-oriented design and the SOLID principles.",
+        role: "Member of a team of four.",
+        features: ["Checkers", "Go", "Tic-tac-toe", "Connect 4"]
+      },
+      pacmanc: {
+        name: "Pac-Man in C", kind: "Game in C",
+        desc: "A Pac-Man game written in C with SDL2, following the rules of the original arcade version.",
+        context: "The goal was to rebuild Pac-Man in C by following the rules of the 1980 arcade game, based on a written development plan covering the maze, the scoring and the ghost behaviour.",
+        role: "I developed the game in C with the SDL2 library, split into modules: map, entities, ghost AI, rendering and audio.",
+        features: ["Maze with warp tunnels, pellets and power pellets", "Ghost AI with alternating scatter and chase modes", "Lives, scoring and bonus fruits that change with the level", "Sprite rendering and sound with SDL2"]
+      },
       pacman: {
-        name: "Pac-Man remake", kind: "Team project, 4 people",
-        desc: "A team recreation of the original Pac-Man game.",
+        name: "Pac-Man in Unity", kind: "Team project, 4 people",
+        desc: "A team recreation of the original arcade game in Unity.",
         context: "Academic team project. The goal was to recreate a classic arcade game as a group of four.",
         role: "Member of a team of four.",
         features: ["Recreation of the original game with Unity and C#"]
       },
-      boards: {
-        name: "Board game platform", kind: "Team project, 4 people",
-        desc: "A C++ platform that hosts several classic board games.",
-        context: "Academic team project. The goal was to implement several games using object-oriented design and the SOLID principles.",
-        role: "Member of a team of four.",
-        features: ["Checkers", "Go", "Tic-tac-toe", "Connect 4"]
+      appcredit: {
+        name: "AppCredit", kind: "Desktop application",
+        desc: "A Windows loan simulator that calculates monthly payments and saves credits in a SQL Server database.",
+        context: "The goal was to build a desktop application that simulates a loan from its amount, duration and annual rate, then records the credit and its client in a database.",
+        role: "I developed the application in C# with Windows Forms, a VB.NET class library for the calculation and a SQL Server database.",
+        features: ["Monthly payment calculation from the amount, duration and annual rate", "A separate window to review and register credits", "A SQL Server stored procedure that creates the client if needed and rejects credits of 60,000 or more, inside a transaction"]
+      },
+      androidgames: {
+        name: "Android mini-games", kind: "Mobile application",
+        desc: "A collection of mini-games developed for Android.",
+        context: "The goal was to learn mobile development with Android Studio by building small games.",
+        role: "I designed and developed the games.",
+        features: ["Several mini-games for Android"]
       }
     },
     certs: [
@@ -109,73 +141,101 @@ var C = {
       nav_home: "Accueil", nav_about: "À propos", nav_skills: "Compétences", nav_projects: "Projets", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Basculer entre le thème sombre et le thème clair", lang_btn: "EN", lang_aria: "Switch the site to English",
       hero_role: "Élève ingénieure en informatique. Data et développement logiciel.",
-      hero_intro: "Je construis des pipelines de données fiables et les applications qui les utilisent. Je travaille actuellement comme Data & BI Engineer chez Domial, en alternance, pendant mon cycle ingénieur au CNAM Grand Est.",
-      hero_status: "À la recherche d'un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028.",
+      hero_intro: "Je construis des pipelines de données fiables et les applications qui s'appuient dessus. Je suis actuellement Data & BI Engineer chez Domial, en alternance, en parallèle de mon cycle ingénieur au CNAM Grand Est.",
+      hero_status: "Je recherche un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028.",
       cta_projects: "Voir mes projets", cta_contact: "Me contacter",
-      about_title: "Mon chemin vers la data",
-      about_p1: "Je viens d'une filière STMG orientée gestion, sans aucune base en informatique. La découverte de la programmation a changé mon orientation : j'ai rejoint un BTS SIO option SLAM (développement logiciel) et je l'ai validé avec 16 de moyenne aux examens.",
-      about_p2: "Ce résultat m'a ouvert les portes du cycle ingénieur du CNAM Grand Est, que je suis en alternance. Chez Domial, je travaille chaque jour sur la donnée : migration d'ETL, qualité des données, reporting BI et conformité.",
+      about_title: "Comment je suis arrivée à la data",
+      about_p1: "J'ai commencé par un bac STMG, orienté gestion, sans aucune base en informatique. En découvrant la programmation, j'ai changé de voie : j'ai intégré un BTS SIO option SLAM (développement logiciel) et je l'ai obtenu avec 16/20 de moyenne aux examens.",
+      about_p2: "Ce résultat m'a permis d'entrer en cycle ingénieur au CNAM Grand Est, que je suis en alternance. Chez Domial, je travaille chaque jour sur la donnée : migration d'ETL, qualité des données, reporting BI et conformité.",
       facts: [
-        ["En formation", "Diplôme d'ingénieur en informatique, option Systèmes d'information (2025 à 2028)"],
-        ["En poste", "Data & BI Engineer en alternance chez Domial (Colmar)"],
+        ["En formation", "Cycle ingénieur en informatique, option Systèmes d'information (2025 à 2028)"],
+        ["En alternance", "Data & BI Engineer chez Domial (Colmar)"],
         ["Langues", "Français (langue maternelle), anglais (B2)"],
         ["Basée à", "Strasbourg, France"]
       ],
       tl_title: "Expérience et formation",
-      skills_title: "Mes outils",
+      skills_title: "Outils et compétences",
       projects_title: "Projets choisis",
       prev_aria: "Projet précédent", next_aria: "Projet suivant", open_hint: "Voir les détails",
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir",
       certs_title: "Certifications",
-      contact_title: "Parlons-en",
-      contact_intro: "Je cherche un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi, ou retrouvez-moi via les liens ci-dessous.",
+      contact_title: "Échangeons",
+      contact_intro: "Je cherche un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
       f_name: "Nom", f_email: "E-mail", f_msg: "Message", f_send: "Envoyer le message",
       f_ok: "Message envoyé. Je vous répondrai dès que possible.",
-      f_fallback: "Envoi direct impossible : votre application de messagerie va s'ouvrir.",
+      f_fallback: "L'envoi direct a échoué : votre application de messagerie va s'ouvrir.",
       l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation",
       foot_done: "Pipeline terminé.", foot_thanks: "Merci de votre lecture."
     },
     timeline: [
-      { date: "Août 2025 à aujourd'hui", title: "Data & BI Engineer (alternance)", where: "Domial, Colmar", bullets: [
+      { date: "Depuis août 2025", title: "Data & BI Engineer en alternance", where: "Domial, Colmar", bullets: [
         "Pilotage d'une migration d'un an des flux d'intégration de données de Qlik vers Talend (ETL).",
-        "Développement de jobs et de scripts Talend pilotés par les métadonnées pour automatiser et standardiser les pipelines de données.",
-        "Garantie de la qualité des données : nettoyage des jeux de données et contrôles automatisés pour détecter les incohérences.",
+        "Développement de jobs et de scripts Talend pilotés par les métadonnées, pour automatiser et standardiser les pipelines.",
+        "Amélioration de la qualité des données : nettoyage des jeux de données et contrôles automatiques qui détectent les incohérences.",
         "Conception et livraison de rapports BI pour plusieurs équipes métier.",
         "Contribution à la conformité des données, au stockage sécurisé et aux bonnes pratiques de sécurité."
       ] },
-      { date: "2025 à 2028 (prévu)", title: "Diplôme d'ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
+      { date: "2025 à 2028 (prévu)", title: "Cycle ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
       { date: "Janv. à févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
-      { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg", text: "Diplôme obtenu avec 16 de moyenne aux examens." },
-      { date: "Avant 2023", title: "Filière STMG", where: "Sciences et technologies du management et de la gestion" }
+      { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg", text: "Diplôme obtenu avec 16/20 de moyenne aux examens." },
+      { date: "Avant 2023", title: "Baccalauréat STMG", where: "Sciences et technologies du management et de la gestion" }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Qualité des données", "Gouvernance des données"] },
-      { g: "Programmation", items: ["Python", "C#", "C / C++", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C / C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
       { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns"] },
       { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Android", "WordPress", "CodeIgniter"] },
-      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Unity", "Agile (Scrum)", "Packet Tracer"] }
+      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Unity", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
-      pollution: {
-        name: "Application de signalement de pollution de l'air", kind: "Projet individuel",
-        desc: "Une application web full-stack où les utilisateurs signalent des incidents de pollution.",
-        context: "Projet académique. L'objectif : réaliser une application complète, de l'interface à la base de données, permettant de signaler des incidents de pollution et de les conserver de façon structurée.",
-        role: "Projet individuel : j'ai conçu et réalisé toute l'application, de l'interface Angular à la base de données PostgreSQL.",
-        features: ["Signalement d'incidents de pollution par les utilisateurs", "Stockage des signalements dans une base PostgreSQL"]
+      alcateams: {
+        name: "ALCATeams", kind: "Projet pour Alcatel",
+        desc: "Un réseau social d'entreprise qui étend la plateforme collaborative Rainbow d'Alcatel.",
+        context: "Projet réalisé pour Alcatel. L'objectif était d'étendre Rainbow avec un réseau social d'entreprise, où les employés sont organisés en communautés et peuvent échanger et rechercher des messages.",
+        role: "J'ai participé au développement de l'application au sein d'une équipe.",
+        features: ["Communautés avec rôles pour les membres et sous-groupes", "Messages synchronisés avec Rainbow", "Recherche plein texte dans les messages avec Meilisearch", "Back end avec une base PostgreSQL gérée via Prisma, exécutée dans Docker"]
       },
-      pacman: {
-        name: "Remake de Pac-Man", kind: "Projet d'équipe, 4 personnes",
-        desc: "Recréation en équipe du jeu Pac-Man original.",
-        context: "Projet académique en équipe. L'objectif : recréer un jeu d'arcade classique à quatre.",
-        role: "Membre d'une équipe de quatre personnes.",
-        features: ["Recréation du jeu original avec Unity et C#"]
+      pollution: {
+        name: "Application de signalement de la pollution de l'air", kind: "Projet individuel",
+        desc: "Une application web full-stack pour signaler des incidents de pollution de l'air.",
+        context: "Projet académique. L'objectif était de réaliser une application complète, de l'interface à la base de données, permettant aux utilisateurs de signaler des incidents de pollution et de les conserver de façon structurée.",
+        role: "Projet individuel : j'ai conçu et développé toute l'application, de l'interface Angular à la base de données PostgreSQL.",
+        features: ["Signalement d'incidents de pollution par les utilisateurs", "Stockage des signalements dans une base PostgreSQL"]
       },
       boards: {
         name: "Plateforme de jeux de plateau", kind: "Projet d'équipe, 4 personnes",
         desc: "Une plateforme C++ qui regroupe plusieurs jeux de plateau classiques.",
-        context: "Projet académique en équipe. L'objectif : implémenter plusieurs jeux avec la conception orientée objet et les principes SOLID.",
+        context: "Projet académique en équipe. L'objectif était d'implémenter plusieurs jeux avec la conception orientée objet et les principes SOLID.",
         role: "Membre d'une équipe de quatre personnes.",
         features: ["Jeu de dames", "Go", "Morpion", "Puissance 4"]
+      },
+      pacmanc: {
+        name: "Pac-Man en C", kind: "Jeu en C",
+        desc: "Un jeu Pac-Man écrit en C avec SDL2, fidèle aux règles de la version arcade d'origine.",
+        context: "L'objectif était de reconstruire Pac-Man en C en suivant les règles du jeu d'arcade de 1980, à partir d'un plan de développement écrit couvrant le labyrinthe, le score et le comportement des fantômes.",
+        role: "J'ai développé le jeu en C avec la bibliothèque SDL2, découpé en modules : carte, entités, IA des fantômes, rendu et audio.",
+        features: ["Labyrinthe avec tunnels latéraux, pastilles et super-pastilles", "IA des fantômes alternant les modes dispersion et poursuite", "Vies, score et fruits bonus qui changent selon le niveau", "Affichage des sprites et son avec SDL2"]
+      },
+      pacman: {
+        name: "Pac-Man sous Unity", kind: "Projet d'équipe, 4 personnes",
+        desc: "Recréation en équipe du jeu d'arcade original avec Unity.",
+        context: "Projet académique en équipe. L'objectif était de recréer un jeu d'arcade classique à quatre.",
+        role: "Membre d'une équipe de quatre personnes.",
+        features: ["Recréation du jeu original avec Unity et C#"]
+      },
+      appcredit: {
+        name: "AppCredit", kind: "Application de bureau",
+        desc: "Un simulateur de prêt pour Windows qui calcule les mensualités et enregistre les crédits dans une base SQL Server.",
+        context: "L'objectif était de réaliser une application de bureau qui simule un prêt à partir de son montant, de sa durée et de son taux annuel, puis enregistre le crédit et son client dans une base de données.",
+        role: "J'ai développé l'application en C# avec Windows Forms, une bibliothèque de classes VB.NET pour le calcul et une base SQL Server.",
+        features: ["Calcul de la mensualité à partir du montant, de la durée et du taux annuel", "Une fenêtre dédiée pour consulter et enregistrer les crédits", "Une procédure stockée SQL Server qui crée le client si besoin et refuse les crédits de 60 000 ou plus, dans une transaction"]
+      },
+      androidgames: {
+        name: "Mini-jeux Android", kind: "Application mobile",
+        desc: "Une collection de mini-jeux développés pour Android.",
+        context: "L'objectif était de découvrir le développement mobile avec Android Studio en réalisant de petits jeux.",
+        role: "J'ai conçu et développé les jeux.",
+        features: ["Plusieurs mini-jeux pour Android"]
       }
     },
     certs: [
@@ -189,7 +249,10 @@ var C = {
 var ART = {
   rings: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle class="s" cx="250" cy="112" r="28"/><circle class="s" cx="250" cy="112" r="58"/><circle class="s" cx="250" cy="112" r="88"/><circle class="s" cx="250" cy="112" r="118"/><circle class="f" cx="250" cy="112" r="6"/><circle class="f" cx="170" cy="70" r="4"/><circle class="fd" cx="320" cy="150" r="9"/><circle class="f" cx="300" cy="60" r="3"/><circle class="f" cx="205" cy="165" r="3.5"/></svg>',
   maze: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path class="s" d="M60 40 H340 V185 H60 Z"/><path class="s" d="M100 80 H200 V130 H100 Z"/><path class="s" d="M240 80 H300 V145 H240 Z"/><path class="s" d="M130 160 H210"/><circle class="f" cx="86" cy="60" r="4"/><circle class="f" cx="126" cy="60" r="4"/><circle class="f" cx="166" cy="60" r="4"/><circle class="f" cx="206" cy="60" r="4"/><circle class="f" cx="246" cy="60" r="4"/><circle class="f" cx="286" cy="60" r="4"/><circle class="f" cx="320" cy="112" r="4"/><circle class="f" cx="220" cy="105" r="4"/><circle class="fd" cx="80" cy="165" r="10"/></svg>',
-  board: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="s"><path d="M120 30 V195 M175 30 V195 M230 30 V195 M285 30 V195"/><path d="M85 65 H320 M85 112 H320 M85 160 H320"/></g><circle class="f" cx="147" cy="88" r="13"/><circle class="fd" cx="202" cy="136" r="13"/><circle class="f" cx="257" cy="88" r="13"/><circle class="fd" cx="147" cy="184" r="13"/><circle class="f" cx="202" cy="42" r="13"/></svg>'
+  board: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="s"><path d="M120 30 V195 M175 30 V195 M230 30 V195 M285 30 V195"/><path d="M85 65 H320 M85 112 H320 M85 160 H320"/></g><circle class="f" cx="147" cy="88" r="13"/><circle class="fd" cx="202" cy="136" r="13"/><circle class="f" cx="257" cy="88" r="13"/><circle class="fd" cx="147" cy="184" r="13"/><circle class="f" cx="202" cy="42" r="13"/></svg>',
+  network: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path class="s" d="M120 70 L210 112 L290 60 M210 112 L160 170 M210 112 L300 160 M120 70 L160 170"/><circle class="fd" cx="210" cy="112" r="14"/><circle class="f" cx="120" cy="70" r="8"/><circle class="f" cx="290" cy="60" r="8"/><circle class="f" cx="160" cy="170" r="8"/><circle class="f" cx="300" cy="160" r="8"/></svg>',
+  coins: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><ellipse class="s" cx="150" cy="150" rx="46" ry="14"/><ellipse class="s" cx="150" cy="132" rx="46" ry="14"/><ellipse class="s" cx="150" cy="114" rx="46" ry="14"/><ellipse class="s" cx="250" cy="165" rx="46" ry="14"/><ellipse class="s" cx="250" cy="147" rx="46" ry="14"/><ellipse class="s" cx="250" cy="129" rx="46" ry="14"/><ellipse class="s" cx="250" cy="111" rx="46" ry="14"/><ellipse class="s" cx="250" cy="93" rx="46" ry="14"/><circle class="fd" cx="320" cy="60" r="9"/><circle class="f" cx="90" cy="80" r="5"/></svg>',
+  pad: '<svg class="art" viewBox="0 0 400 225" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect class="s" x="120" y="45" width="160" height="135" rx="18"/><path class="s" d="M150 140 H190 M170 120 V160"/><circle class="f" cx="236" cy="128" r="9"/><circle class="fd" cx="258" cy="150" r="9"/><rect class="s" x="140" y="62" width="120" height="40" rx="4"/><circle class="f" cx="200" cy="82" r="5"/></svg>'
 };
 
 /* =====================================================================
