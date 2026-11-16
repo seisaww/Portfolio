@@ -10,13 +10,51 @@ var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv
 var EMAIL = "laazibiimane101@gmail.com";
 
 var PROJECT_META = [
-  { key: "alcateams",  art: "network", tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Docker"], repo: "https://github.com/alcateams/alcateams", cover: "", shots: [] },
-  { key: "pollution",  art: "rings",   tech: ["Angular", "PostgreSQL"],                 repo: "", cover: "", shots: [] },
-  { key: "boards",     art: "board",   tech: ["C++"],                                   repo: "", cover: "", shots: [] },
-  { key: "pacmanc",    art: "maze",    tech: ["C", "SDL2"],                             repo: "https://github.com/Pacman-C/Pacman", cover: "", shots: [] },
-  { key: "pacman",     art: "maze",    tech: ["C#", "Unity"],                           repo: "", cover: "", shots: [] },
-  { key: "appcredit",  art: "coins",   tech: ["C#", "VB.NET", "Windows Forms", "SQL Server"], repo: "https://github.com/seisaww/AppCredit", cover: "", shots: [] },
-  { key: "androidgames", art: "pad",   tech: ["Android Studio"],                        repo: "", cover: "", shots: [] }
+  { key: "pacman", art: "maze", tech: ["C#", "Unity", "ML-Agents", "Reinforcement learning"],
+    repo: "https://github.com/CNAM-A1-Pacman/Pacman", cover: "",
+    shots: [
+      { src: "images/unity/unity3.png", alt: { fr: "Partie en cours", en: "Game in progress" } },
+      { src: "images/unity/unity2.png", alt: { fr: "Configuration de la partie et pilote auto (IA)", en: "Game settings and AI autopilot" } },
+      { src: "images/unity/unity1.png", alt: { fr: "Éditeur de cartes", en: "Map editor" } }
+    ] },
+  { key: "alcateams", art: "network", tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Docker"],
+    repo: "https://github.com/alcateams/alcateams", cover: "",
+    shots: [
+      { src: "images/alcateams/alcateams1.png", alt: { fr: "Page de connexion", en: "Login page" } }
+    ] },
+  { key: "pollution", art: "rings", tech: ["Angular", "NGXS", "Node.js", "Express", "PostgreSQL", "JWT"],
+    repo: "https://github.com/seisaww/projet_laazibi_imane", cover: "",
+    shots: [
+      { src: "images/pollusite/pollusite1.png", alt: { fr: "Formulaire de signalement", en: "Report form" } },
+      { src: "images/pollusite/pollusite2.png", alt: { fr: "Liste des signalements", en: "List of reports" } }
+    ] },
+  { key: "boards", art: "board", tech: ["C++", "Qt 6", "CMake"],
+    repo: "https://gitlab.com/jfromageat/cpp_2025", cover: "images/boardgame/boardgame3.png",
+    shots: [
+      { src: "images/boardgame/boardgame1.png", alt: { fr: "Menu principal", en: "Main menu" } },
+      { src: "images/boardgame/boardgame2.png", alt: { fr: "Partie de Puissance 4", en: "Connect 4 game" } },
+      { src: "images/boardgame/boardgame3.png", alt: { fr: "Partie d'Othello entre deux IA", en: "Othello game, AI vs AI" } }
+    ] },
+  { key: "pacmanc", art: "maze", tech: ["C", "SDL2"],
+    repo: "https://github.com/Pacman-C/Pacman", cover: "",
+    shots: [
+      { src: "images/pacmanc/pacmanc1.png", alt: { fr: "Écran d'accueil", en: "Start screen" } },
+      { src: "images/pacmanc/pacmanc2.png", alt: { fr: "Partie en cours", en: "Game in progress" } }
+    ] },
+  
+  { key: "androidgames", art: "pad", tech: ["Kotlin", "Jetpack Compose", "Room", "Android Studio"],
+    repo: "https://github.com/seisaww/AppMobile_LAAZIBI-Imane", cover: "",
+    shots: [
+      { src: "images/android/android1.png", alt: { fr: "Menu des jeux", en: "Game menu" } },
+      { src: "images/android/android2.png", alt: { fr: "Jeu de précision", en: "Timing game" } },
+      { src: "images/android/android3.png", alt: { fr: "Jeu de mots", en: "Word game" } }
+    ] },
+  { key: "appcredit", art: "coins", tech: ["C#", "VB.NET", "Windows Forms", "SQL Server"],
+    repo: "https://github.com/seisaww/AppCredit", cover: "",
+    shots: [
+      { src: "images/appcredit/appcredit1.png", alt: { fr: "Enregistrement des crédits", en: "Saving credits" } },
+      { src: "images/appcredit/appcredit2.png", alt: { fr: "Calcul de la mensualité", en: "Monthly payment calculation" } }
+    ] }
 ];
 
 /* =====================================================================
@@ -48,7 +86,7 @@ var C = {
       skills_title: "Tools and skills",
       projects_title: "Selected projects",
       prev_aria: "Previous project", next_aria: "Next project", c_prev_aria: "Previous certification", c_next_aria: "Next certification", open_hint: "See details",
-      d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon",
+      d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon", lb_close: "Close", lb_prev: "Previous screenshot", lb_next: "Next screenshot", lb_open: "Enlarge screenshot",
       certs_title: "Certifications",
       contact_title: "Let's talk",
       contact_intro: "I'm looking for an internship abroad of at least 9 weeks, in English or French, in data or software development, from July to October 2028. Send me a message or find me through the links below.",
@@ -72,10 +110,10 @@ var C = {
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data warehouse (DWH)", "Stored procedures", "Data quality", "Data governance"] },
-      { g: "Programming", items: ["Python", "C#", "VB.NET", "C", "C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Programming", items: ["Python", "C#", "VB.NET", "C", "C++", "Kotlin", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
       { g: "Software design", items: ["Object-oriented design", "SOLID principles", "Design patterns", "Project management"] },
-      { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "WordPress", "Elementor", "CodeIgniter"] },
-      { g: "Desktop & games", items: ["Windows Forms", "Unity", "SDL2"] },
+      { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
+      { g: "Desktop & games", items: ["Windows Forms", "Qt", "Unity", "Unity ML-Agents", "SDL2"] },
       { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
@@ -88,17 +126,29 @@ var C = {
       },
       pollution: {
         name: "Air pollution reporting app", kind: "Individual project",
-        desc: "A full-stack web app for reporting air pollution incidents.",
+        desc: "A full-stack web app for reporting air pollution incidents, with user accounts and favourites.",
         context: "Academic project. The goal was to build a complete application, from the interface to the database, where users can report pollution incidents and have them stored in a structured way.",
-        role: "Individual project: I designed and built the whole application, from the Angular interface to the PostgreSQL database.",
-        features: ["Users report pollution incidents", "Reports are stored in a PostgreSQL database"]
+        role: "Individual project: I designed and built the whole application, from the Angular interface to the Node.js API and the PostgreSQL database.",
+        features: [
+          "Report pollution incidents, then browse them in a list with a detail page",
+          "Sign-up and login with JWT authentication and passwords hashed with bcrypt",
+          "Protected pages (Angular route guard) and an HTTP interceptor that adds the token to every request",
+          "Favourite reports managed with NGXS and kept between sessions",
+          "REST API in Node.js and Express, with Sequelize on PostgreSQL"
+        ]
       },
       boards: {
         name: "Board game platform", kind: "Team project, 4 people",
-        desc: "A C++ platform hosting several classic board games.",
-        context: "Academic team project. The goal was to implement several games using object-oriented design and the SOLID principles.",
-        role: "Member of a team of four.",
-        features: ["Checkers", "Go", "Tic-tac-toe", "Connect 4"]
+        desc: "A C++ and Qt platform with four board games, where you can play against a friend, against an AI, or watch two AIs play each other.",
+        context: "Academic team project in C++. The goal was to build a single platform for several board games, designed with object-oriented principles and SOLID so that a new game can be added without changing the rest of the code.",
+        role: "Member of a team of four. I developed the checkers game and the save system (saving, serialising and loading games), and worked on refactoring and code quality.",
+        features: [
+          "Four games: tic-tac-toe, Connect 4, Othello and checkers",
+          "Three modes: player vs player, player vs AI and AI vs AI",
+          "AI opponents built on interchangeable strategies (Strategy pattern)",
+          "Save a game at any moment and load it later from the menu",
+          "A Qt graphical interface and a console version sharing the same game engine"
+        ]
       },
       pacmanc: {
         name: "Pac-Man in C", kind: "Pair project in C",
@@ -109,24 +159,39 @@ var C = {
       },
       pacman: {
         name: "Pac-Man in Unity", kind: "Team project, 4 people",
-        desc: "A team recreation of the original arcade game in Unity.",
-        context: "Academic team project. The goal was to recreate a classic arcade game as a group of four.",
-        role: "Member of a team of four. I mainly developed the ghosts.",
-        features: ["Recreation of the original game with Unity and C#", "The ghosts, which I mainly developed"]
+        desc: "A Pac-Man game in Unity, with an AI trained over several months to play in place of the player, and adjustable difficulty.",
+        context: "Academic team project over the year. The goal was to recreate Pac-Man in Unity and C#, then go further: a configuration menu, a map editor and an AI that learns to play the game by itself through reinforcement learning.",
+        role: "Member of a team of four. I first built the Pac-Man character and its movement, then mainly developed the ghosts: their distinct chase behaviours (ambusher, flanker), the scatter, frightened and home modes, and the refactoring of their code.",
+        features: [
+          "An AI built with Unity ML-Agents (PPO), trained over several months, that plays Pac-Man in place of the player",
+          "Configuration screen: speed of Pac-Man and of the ghosts, power pellet duration, ghost release time and active ghosts, with an estimated difficulty (easy, normal, hard) and an AI autopilot switch",
+          "Four ghosts with their own movement behaviour, based on nodes placed at the maze intersections",
+          "A map editor that saves and loads mazes, with two playable maps",
+          "Score, rounds, lives and a Game Over screen to start again"
+        ]
       },
       appcredit: {
         name: "AppCredit", kind: "Team project, 4 people, as project lead",
         desc: "A Windows loan simulator that calculates monthly payments and saves credits in a SQL Server database.",
         context: "The goal was to build a desktop application that simulates a loan from its amount, duration and annual rate, then records the credit and its client in a database.",
-        role: "Project lead of a team of four. I wrote almost all of the application myself: C# with Windows Forms, a VB.NET class library for the calculation and the SQL Server database.",
-        features: ["Monthly payment calculation from the amount, duration and annual rate", "A separate window to review and register credits", "A SQL Server stored procedure that creates the client if needed and rejects credits of 60,000 or more, inside a transaction"]
+        role: "Project lead of a team of four: I organised the work and the deliverables, and took part in the development of the application and the database.",
+        features: [
+          "Monthly payment calculation from the amount, duration and annual rate (VB.NET class library)",
+          "A Windows Forms window to review and register credits",
+          "A SQL Server stored procedure that creates the client if needed and rejects credits of 60,000 or more, inside a transaction"
+        ]
       },
       androidgames: {
-        name: "Android mini-games", kind: "Mobile application",
-        desc: "A collection of mini-games developed for Android.",
-        context: "The goal was to learn mobile development with Android Studio by building small games.",
-        role: "I designed and developed the games.",
-        features: ["Several mini-games for Android"]
+        name: "Android mini-games", kind: "Individual project, mobile app",
+        desc: "An Android app in Kotlin and Jetpack Compose with two mini-games and a shared leaderboard.",
+        context: "Academic project to learn mobile development. The goal was to build an app with a game menu, two games developed during the practical sessions and a leaderboard saved on the phone.",
+        role: "Individual project: I designed and developed the whole application.",
+        features: [
+          "Menu listing the games with a short description, and a nickname required to play",
+          "Timing game: stop the timer as close as possible to a target time, with a speed that changes with the score",
+          "Word game: find the hidden word in a letter grid, with a hint and the best score saved",
+          "Top 10 leaderboard stored locally with Room, with a reset button"
+        ]
       }
     },
     certs: [
@@ -163,7 +228,7 @@ var C = {
       skills_title: "Outils et compétences",
       projects_title: "Projets choisis",
       prev_aria: "Projet précédent", next_aria: "Projet suivant", c_prev_aria: "Certification précédente", c_next_aria: "Certification suivante", open_hint: "Voir les détails",
-      d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir",
+      d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir", lb_close: "Fermer", lb_prev: "Capture précédente", lb_next: "Capture suivante", lb_open: "Agrandir la capture",
       certs_title: "Certifications",
       contact_title: "Échangeons",
       contact_intro: "Je recherche un stage à l'étranger de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
@@ -187,10 +252,10 @@ var C = {
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Entrepôt de données (DWH)", "Procédures stockées", "Qualité des données", "Gouvernance des données"] },
-      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C", "C++", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
+      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C", "C++", "Kotlin", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
       { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns", "Gestion de projet"] },
-      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "WordPress", "Elementor", "CodeIgniter"] },
-      { g: "Applications et jeux", items: ["Windows Forms", "Unity", "SDL2"] },
+      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
+      { g: "Applications et jeux", items: ["Windows Forms", "Qt", "Unity", "Unity ML-Agents", "SDL2"] },
       { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
@@ -203,17 +268,29 @@ var C = {
       },
       pollution: {
         name: "Application de signalement de la pollution de l'air", kind: "Projet individuel",
-        desc: "Une application web full-stack pour signaler des incidents de pollution de l'air.",
+        desc: "Une application web full-stack pour signaler des incidents de pollution de l'air, avec comptes utilisateurs et favoris.",
         context: "Projet académique. L'objectif était de réaliser une application complète, de l'interface à la base de données, permettant aux utilisateurs de signaler des incidents de pollution et de les conserver de façon structurée.",
-        role: "Projet individuel : j'ai conçu et développé toute l'application, de l'interface Angular à la base de données PostgreSQL.",
-        features: ["Signalement d'incidents de pollution par les utilisateurs", "Stockage des signalements dans une base PostgreSQL"]
+        role: "Projet individuel : j'ai conçu et développé toute l'application, de l'interface Angular à l'API Node.js et à la base de données PostgreSQL.",
+        features: [
+          "Signalement d'incidents de pollution, puis consultation sous forme de liste avec une page de détail",
+          "Inscription et connexion avec authentification JWT et mots de passe hachés avec bcrypt",
+          "Pages protégées (guard Angular) et intercepteur HTTP qui ajoute le jeton à chaque requête",
+          "Signalements favoris gérés avec NGXS et conservés d'une session à l'autre",
+          "API REST en Node.js et Express, avec Sequelize sur PostgreSQL"
+        ]
       },
       boards: {
         name: "Plateforme de jeux de plateau", kind: "Projet d'équipe, 4 personnes",
-        desc: "Une plateforme C++ qui regroupe plusieurs jeux de plateau classiques.",
-        context: "Projet académique en équipe. L'objectif était d'implémenter plusieurs jeux avec la conception orientée objet et les principes SOLID.",
-        role: "Membre d'une équipe de quatre personnes.",
-        features: ["Jeu de dames", "Go", "Morpion", "Puissance 4"]
+        desc: "Une plateforme C++ et Qt de quatre jeux de plateau : on peut jouer contre un ami, contre une IA, ou regarder deux IA s'affronter.",
+        context: "Projet académique en équipe, en C++. L'objectif était de réunir plusieurs jeux de plateau dans une seule plateforme, conçue avec la programmation orientée objet et les principes SOLID pour pouvoir ajouter un jeu sans modifier le reste du code.",
+        role: "Membre d'une équipe de quatre personnes. J'ai développé le jeu de dames et le système de sauvegarde (sauvegarde, sérialisation et chargement des parties), et j'ai participé au refactoring et à la qualité du code.",
+        features: [
+          "Quatre jeux : morpion, Puissance 4, Othello et dames",
+          "Trois modes : joueur contre joueur, joueur contre IA et IA contre IA",
+          "Des IA basées sur des stratégies interchangeables (patron Strategy)",
+          "Sauvegarde d'une partie à tout moment et reprise plus tard depuis le menu",
+          "Une interface graphique Qt et une version console qui partagent le même moteur de jeu"
+        ]
       },
       pacmanc: {
         name: "Pac-Man en C", kind: "Projet en binôme, en C",
@@ -224,24 +301,39 @@ var C = {
       },
       pacman: {
         name: "Pac-Man sous Unity", kind: "Projet d'équipe, 4 personnes",
-        desc: "Recréation en équipe du jeu d'arcade original avec Unity.",
-        context: "Projet académique en équipe. L'objectif était de recréer un jeu d'arcade classique à quatre.",
-        role: "Membre d'une équipe de quatre personnes. J'ai principalement développé les fantômes.",
-        features: ["Recréation du jeu original avec Unity et C#", "Les fantômes, que j'ai principalement développés"]
+        desc: "Un Pac-Man sous Unity, avec une IA entraînée pendant plusieurs mois pour jouer à la place du joueur, et une difficulté réglable.",
+        context: "Projet académique en équipe sur l'année. L'objectif était de recréer Pac-Man avec Unity et C#, puis d'aller plus loin : un menu de configuration, un éditeur de cartes et une IA qui apprend à jouer seule par apprentissage par renforcement.",
+        role: "Membre d'une équipe de quatre personnes. J'ai d'abord réalisé le personnage de Pac-Man et ses déplacements, puis j'ai principalement développé les fantômes : leurs comportements de poursuite distincts (embuscade, contournement), les modes dispersion, effrayé et retour à la maison, et le refactoring de leur code.",
+        features: [
+          "Une IA réalisée avec Unity ML-Agents (PPO), entraînée pendant plusieurs mois, qui joue à Pac-Man à la place du joueur",
+          "Écran de configuration : vitesse de Pac-Man et des fantômes, durée des super-pastilles, temps en prison des fantômes et fantômes actifs, avec une difficulté estimée (facile, normal, difficile) et un interrupteur pilote auto (IA)",
+          "Quatre fantômes au comportement propre, basé sur des nœuds placés aux intersections du labyrinthe",
+          "Un éditeur de cartes avec sauvegarde et chargement des labyrinthes, et deux cartes jouables",
+          "Score, manches, vies et écran de Game Over pour recommencer"
+        ]
       },
       appcredit: {
         name: "AppCredit", kind: "Projet d'équipe, 4 personnes, cheffe de projet",
         desc: "Un simulateur de prêt pour Windows qui calcule les mensualités et enregistre les crédits dans une base SQL Server.",
         context: "L'objectif était de réaliser une application de bureau qui simule un prêt à partir de son montant, de sa durée et de son taux annuel, puis enregistre le crédit et son client dans une base de données.",
-        role: "Cheffe de projet d'une équipe de quatre personnes. J'ai écrit presque toute l'application : C# avec Windows Forms, une bibliothèque de classes VB.NET pour le calcul et la base SQL Server.",
-        features: ["Calcul de la mensualité à partir du montant, de la durée et du taux annuel", "Une fenêtre dédiée pour consulter et enregistrer les crédits", "Une procédure stockée SQL Server qui crée le client si besoin et refuse les crédits de 60 000 ou plus, dans une transaction"]
+        role: "Cheffe de projet d'une équipe de quatre personnes : j'ai organisé le travail et les livrables, et j'ai participé au développement de l'application et de la base de données.",
+        features: [
+          "Calcul de la mensualité à partir du montant, de la durée et du taux annuel (bibliothèque de classes VB.NET)",
+          "Une fenêtre Windows Forms pour consulter et enregistrer les crédits",
+          "Une procédure stockée SQL Server qui crée le client si besoin et refuse les crédits de 60 000 ou plus, dans une transaction"
+        ]
       },
       androidgames: {
-        name: "Mini-jeux Android", kind: "Application mobile",
-        desc: "Une collection de mini-jeux développés pour Android.",
-        context: "L'objectif était de découvrir le développement mobile avec Android Studio en réalisant de petits jeux.",
-        role: "J'ai conçu et développé les jeux.",
-        features: ["Plusieurs mini-jeux pour Android"]
+        name: "Mini-jeux Android", kind: "Projet individuel, application mobile",
+        desc: "Une application Android en Kotlin et Jetpack Compose avec deux mini-jeux et un classement commun.",
+        context: "Projet académique pour découvrir le développement mobile. L'objectif était de réaliser une application avec un menu de jeux, deux jeux développés pendant les TP et un classement enregistré sur le téléphone.",
+        role: "Projet individuel : j'ai conçu et développé toute l'application.",
+        features: [
+          "Menu qui présente les jeux avec une courte description, et pseudo obligatoire pour jouer",
+          "Jeu de précision : arrêter le chrono au plus près d'un temps cible, avec une vitesse qui varie selon le score",
+          "Jeu de mots : retrouver le mot caché dans une grille de lettres, avec un indice et le meilleur score mémorisé",
+          "Classement des 10 meilleurs scores stocké en local avec Room, avec un bouton de réinitialisation"
+        ]
       }
     },
     certs: [
@@ -340,13 +432,20 @@ var ART = {
     }).join("");
   }
 
+  /* screenshot captions can be a plain string or { fr: "...", en: "..." } */
+  function altOf(s) { var a = s.alt || ""; return typeof a === "string" ? a : (a[lang] || a.fr || a.en || ""); }
+  /* an image inside a frame: blurred copy behind, whole image on top (any ratio) */
+  function framed(src, alt, art) {
+    return ' style="--img:url(&quot;' + esc(src) + '&quot;)" data-art="' + art + '"><img src="' + esc(src) + '" alt="' + esc(alt) + '" loading="lazy" decoding="async">';
+  }
+
   function renderProjects() {
     var u = ui();
     $("#track").innerHTML = PROJECT_META.map(function (m, i) {
       var p = C[lang].projects[m.key];
-      var cover = m.cover ? '<img src="' + esc(m.cover) + '" alt="" loading="lazy">' : ART[m.art];
-      return '<button class="card" type="button" role="listitem" data-i="' + i + '">' +
-        '<div class="cover">' + cover + "</div>" +
+      var src = m.cover || (m.shots && m.shots[0] && m.shots[0].src);
+      var cover = src ? '<div class="cover frame"' + framed(src, "", m.art) + "</div>" : '<div class="cover">' + ART[m.art] + "</div>";
+      return '<button class="card" type="button" role="listitem" data-i="' + i + '">' + cover +
         '<div class="card-body"><div class="kind">' + esc(p.kind) + "</div><h3>" + esc(p.name) + "</h3><p>" + esc(p.desc) + "</p>" +
         '<div class="tags">' + m.tech.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
         '<span class="more">' + esc(u.open_hint) + "</span></div></button>";
@@ -370,7 +469,11 @@ var ART = {
     if (openIndex < 0) return;
     var u = ui(), m = PROJECT_META[openIndex], p = C[lang].projects[m.key];
     var shots = m.shots && m.shots.length
-      ? m.shots.map(function (s) { return '<div class="shot"><img src="' + esc(s.src) + '" alt="' + esc(s.alt || "") + '" loading="lazy"></div>'; }).join("")
+      ? m.shots.map(function (s, k) {
+          var alt = altOf(s);
+          return '<figure class="shot"><button class="shot-btn frame" type="button" data-k="' + k + '" aria-label="' + esc(u.lb_open + (alt ? " : " + alt : "")) + '"' +
+            framed(s.src, alt, m.art) + "</button>" + (alt ? "<figcaption>" + esc(alt) + "</figcaption>" : "") + "</figure>";
+        }).join("")
       : '<div class="shot ph">' + esc(u.d_shot_ph) + '</div><div class="shot ph">' + esc(u.d_shot_ph) + "</div>";
     $("#dlg").innerHTML = '<div class="dlg">' +
       '<button class="close" type="button" aria-label="' + esc(u.d_close) + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>' +
@@ -384,8 +487,64 @@ var ART = {
       "</div>";
   }
 
+  /* if an image can't load, show the project's illustration instead of a broken icon */
+  document.addEventListener("error", function (e) {
+    var img = e.target;
+    if (!img || img.tagName !== "IMG") return;
+    var box = img.closest ? img.closest(".frame") : null;
+    if (!box) return;
+    box.classList.remove("frame");
+    box.style.removeProperty("--img");
+    box.classList.add("broken");
+    box.innerHTML = ART[box.getAttribute("data-art")] || "";
+  }, true);
+
+  /* ---------- full-size screenshot viewer ---------- */
+  var lb = $("#lb"), lbIndex = 0;
+  function renderLightbox() {
+    if (openIndex < 0) return;
+    var u = ui(), shots = PROJECT_META[openIndex].shots, s = shots[lbIndex], alt = altOf(s), many = shots.length > 1;
+    var arrow = function (cls, label, d, off) {
+      return '<button class="arrow ' + cls + '" type="button" aria-label="' + esc(label) + '"' + (off ? " disabled" : "") +
+        '><svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + d + '"/></svg></button>';
+    };
+    lb.setAttribute("aria-label", alt || u.d_shots);
+    lb.innerHTML = '<figure class="lb-fig"><img src="' + esc(s.src) + '" alt="' + esc(alt) + '">' +
+      (alt ? "<figcaption>" + esc(alt) + "</figcaption>" : "") + "</figure>" +
+      '<div class="lb-bar">' +
+      (many ? arrow("lb-prev", u.lb_prev, "M15 5l-7 7 7 7", lbIndex === 0) + '<span class="lb-count">' + (lbIndex + 1) + " / " + shots.length + "</span>" : "") +
+      '<button class="close lb-close" type="button" aria-label="' + esc(u.lb_close) + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>' +
+      (many ? arrow("lb-next", u.lb_next, "M9 5l7 7-7 7", lbIndex === shots.length - 1) : "") +
+      "</div>";
+  }
+  function lbGo(d) {
+    var n = PROJECT_META[openIndex].shots.length, k = lbIndex + d;
+    if (k < 0 || k >= n) return;
+    lbIndex = k; renderLightbox();
+    var b = $(d < 0 ? ".lb-prev" : ".lb-next", lb);
+    if (b && !b.disabled) b.focus(); else $(".lb-close", lb).focus();
+  }
+  $("#dlg").addEventListener("click", function (e) {
+    var b = e.target.closest ? e.target.closest(".shot-btn") : null;
+    if (!b || b.closest(".broken")) return;
+    lbIndex = +b.getAttribute("data-k");
+    renderLightbox();
+    if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
+  });
+  lb.addEventListener("click", function (e) {
+    var t = e.target;
+    if (t === lb || (t.closest && t.closest(".lb-close"))) lb.close();
+    else if (t.closest && t.closest(".lb-prev")) lbGo(-1);
+    else if (t.closest && t.closest(".lb-next")) lbGo(1);
+  });
+  lb.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") lbGo(-1);
+    else if (e.key === "ArrowRight") lbGo(1);
+  });
+
   function renderAll() {
     renderStatic(); renderTimeline(); renderSkills(); renderProjects(); renderCerts(); renderLinks(); renderDialog();
+    if (lb.open) renderLightbox();
     watch(document);
     firstRender = false;
   }
@@ -621,7 +780,7 @@ var ART = {
 
     function seed() {
       var n = Math.max(30, Math.min(90, Math.round(W * H / 17000)));
-      nodes = [];
+      nodes = []; pulses = [];;
       for (var i = 0; i < n; i++) nodes.push({
         x: Math.random() * W, y: Math.random() * H,
         vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3,
@@ -667,6 +826,7 @@ var ART = {
       ctx.shadowBlur = 12; ctx.globalAlpha = 1;
       for (i = pulses.length - 1; i >= 0; i--) {
         var p = pulses[i], A = nodes[p.a], B = nodes[p.b];
+        if (!A || !B) { pulses.splice(i, 1); continue; }
         p.t += .018;
         if (p.t >= 1) { pulses.splice(i, 1); continue; }
         ctx.beginPath(); ctx.arc(A.x + (B.x - A.x) * p.t, A.y + (B.y - A.y) * p.t, 2.4, 0, 6.2832); ctx.fill();
