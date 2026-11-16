@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<script src="theme.js"></script>
 <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -44,32 +45,18 @@
 
   <!-- HOME -->
   <section class="hero" id="home" aria-labelledby="name">
-    <svg class="hero-art" viewBox="0 0 800 800" aria-hidden="true" focusable="false">
-      <circle class="ln" cx="520" cy="360" r="300"/>
-      <circle class="ln dash spin" cx="520" cy="360" r="225"/>
-      <rect class="ln" x="380" y="220" width="280" height="280" transform="rotate(18 520 360)"/>
-      <path id="p1" class="ln strong" d="M0 580 H250 L330 500 H520 L600 580 H800"/>
-      <path id="p2" class="ln strong" d="M100 150 H300 L380 230 H640 L700 170"/>
-      <path class="ln" d="M520 500 V660 H760"/>
-      <g>
-        <circle class="node" cx="250" cy="580" r="7"/><circle class="node" cx="330" cy="500" r="7"/>
-        <circle class="node" cx="520" cy="500" r="7"/><circle class="node" cx="600" cy="580" r="7"/>
-        <circle class="node" cx="300" cy="150" r="7"/><circle class="node" cx="380" cy="230" r="7"/>
-        <circle class="node" cx="640" cy="230" r="7"/><circle class="node" cx="520" cy="660" r="7"/>
-      </g>
-      <circle class="pulse" r="4"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
-      <circle class="pulse" r="3.5"><animateMotion dur="8s" begin="-4s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion></circle>
-      <circle class="pulse" r="3.5"><animateMotion dur="10s" begin="-2s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion></circle>
-    </svg>
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
 
     <div class="wrap">
-      <h1 class="name" id="name" aria-label="Imane">
-        <span class="l" aria-hidden="true" style="--i:0"><span>I</span></span><span class="l" aria-hidden="true" style="--i:1"><span>m</span></span><span class="l" aria-hidden="true" style="--i:2"><span>a</span></span><span class="l" aria-hidden="true" style="--i:3"><span>n</span></span><span class="l" aria-hidden="true" style="--i:4"><span>e</span></span>
+      <p class="query seq" style="--t:.1s" aria-hidden="true"><span class="prompt">&gt;</span> <span id="typed"></span><i class="caret"></i></p>
+      <h1 class="name" id="name" aria-label="Imane Laazibi">
+        <span class="w" id="w1" aria-hidden="true">Imane</span>
+        <span class="w outline" id="w2" aria-hidden="true">Laazibi</span>
       </h1>
-      <p class="role seq" style="--t:1.0s" data-i18n="hero_role"></p>
-      <p class="intro seq" style="--t:1.15s" data-i18n="hero_intro"></p>
-      <p class="status seq" style="--t:1.3s"><i aria-hidden="true"></i><span data-i18n="hero_status"></span></p>
-      <div class="cta seq" style="--t:1.45s">
+      <p class="role seq" style="--t:1.5s" data-i18n="hero_role"></p>
+      <p class="intro seq" style="--t:1.65s" data-i18n="hero_intro"></p>
+      <p class="status seq" style="--t:1.8s"><i aria-hidden="true"></i><span data-i18n="hero_status"></span></p>
+      <div class="cta seq" style="--t:1.95s">
         <a class="btn solid" href="#projects" data-i18n="cta_projects"></a>
         <a class="btn" href="#contact" data-i18n="cta_contact"></a>
       </div>
@@ -118,8 +105,15 @@
   <!-- CERTIFICATIONS -->
   <section id="certs" aria-labelledby="certs-title">
     <div class="wrap">
-      <h2 class="mask" id="certs-title" data-reveal-mask><span data-i18n="certs_title"></span></h2>
-      <div class="certs" id="certList"></div>
+      <div class="proj-head">
+        <h2 class="mask" id="certs-title" data-reveal-mask><span data-i18n="certs_title"></span></h2>
+        <div class="ctrl" data-reveal="up">
+          <button class="arrow" id="cprev" type="button" data-i18n-aria="c_prev_aria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <span class="count" id="ccount" aria-live="polite"></span>
+          <button class="arrow" id="cnext" type="button" data-i18n-aria="c_next_aria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="track" id="certTrack" role="list" data-reveal="scale"></div>
     </div>
   </section>
 
@@ -147,20 +141,7 @@
   </section>
 </main>
 
-<footer>
-  <div class="wrap">
-    <div class="pipe" id="pipe" aria-hidden="true">
-      <span class="n" style="--k:0"></span><span class="seg" style="--k:0"></span>
-      <span class="n" style="--k:1"></span><span class="seg" style="--k:1"></span>
-      <span class="n" style="--k:2"></span><span class="seg" style="--k:2"></span>
-      <span class="n" style="--k:3"></span>
-    </div>
-    <div class="foot-row">
-      <span><strong data-i18n="foot_done"></strong> <span data-i18n="foot_thanks"></span></span>
-      <span>&copy; <span id="year"></span> Imane Laazibi</span>
-    </div>
-  </div>
-</footer>
+
 
 <!-- Project details window -->
 <dialog id="dlg" aria-labelledby="dlg-title"></dialog>

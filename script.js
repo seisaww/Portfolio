@@ -4,6 +4,7 @@
       "cv" and "letter" can be a file next to this page, e.g. "cv-imane-laazibi.pdf".
    2. PROJECTS: add "repo" (GitHub/GitLab URL) and "shots" (screenshots) below.
       shots example: [{ src: "images/pollution-1.png", alt: "Report form" }]
+   3. CERTIFICATIONS: add an entry to "certs" in each language (the carousel adapts).
    ===================================================================== */
 var LINKS = { github: "https://github.com/seisaww", gitlab: "", linkedin: "", cv: "", letter: "" };
 var EMAIL = "laazibiimane101@gmail.com";
@@ -30,44 +31,43 @@ var C = {
       nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Switch between dark and light theme", lang_btn: "FR", lang_aria: "Passer le site en français",
       hero_role: "Computer science engineering student. Data and software development.",
-      hero_intro: "I build reliable data pipelines and the applications that rely on them. I currently work as a Data & BI Engineer at Domial on a work-study contract, alongside my engineering degree at CNAM Grand Est.",
-      hero_status: "Looking for a 9-week international internship in data or software development, from July to October 2028.",
+      hero_intro: "As a Data & BI Engineer at Domial on a work-study contract, I build BI reports for the company's different business teams, set up data quality controls and put a data architecture in place in our data warehouse (DWH). Alongside, I'm working toward my engineering degree at CNAM Grand Est.",
+      hero_status: "Looking for an internship of at least 9 weeks, in English or French, in data or software development, from July to October 2028.",
       cta_projects: "See my projects", cta_contact: "Get in touch",
-      about_title: "How I got into data",
-      about_p1: "I started out in a management-focused STMG track, with no background in computing. Discovering programming changed my path: I enrolled in a BTS in software development (SIO, SLAM option) and graduated with an average of 16/20 in the exams.",
-      about_p2: "That result got me into the engineering programme at CNAM Grand Est, which I follow on a work-study basis. At Domial I work with data every day: ETL migration, data quality, BI reporting and compliance.",
+      about_title: "How I met computer science",
+      about_p1: "I did an STMG baccalaureate with a marketing option. I enjoyed the Python we did in maths class, so I headed to a BTS in software development (SIO, SLAM option) with no background in computing, and graduated with an average of 16/20 in the exams.",
+      about_p2: "That result opened the door to the engineering programme at CNAM Grand Est, which I follow on a work-study basis. At Domial, I build BI reports for the different business teams, set up data quality controls and put a data architecture in place in our DWH.",
+      facts_title: "What I'm doing right now",
       facts: [
         ["Studying", "Engineering degree in Computer Science, Information Systems track (2025 to 2028)"],
         ["Working", "Data & BI Engineer, work-study at Domial (Colmar)"],
-        ["Languages", "French (native), English (B2)"],
+        ["Languages", "French (native), English (B2 to C1)"],
         ["Based in", "Strasbourg, France"]
       ],
       tl_title: "Experience and education",
       skills_title: "Tools and skills",
       projects_title: "Selected projects",
-      prev_aria: "Previous project", next_aria: "Next project", open_hint: "See details",
+      prev_aria: "Previous project", next_aria: "Next project", c_prev_aria: "Previous certification", c_next_aria: "Next certification", open_hint: "See details",
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon",
       certs_title: "Certifications",
       contact_title: "Let's talk",
-      contact_intro: "I'm looking for a 9-week international internship in data or software development, from July to October 2028. Send me a message or find me through the links below.",
+      contact_intro: "I'm looking for an internship of at least 9 weeks, in English or French, in data or software development, from July to October 2028. Send me a message or find me through the links below.",
       f_name: "Name", f_email: "Email", f_msg: "Message", f_send: "Send message",
       f_ok: "Message sent. I'll get back to you as soon as I can.",
       f_fallback: "The message couldn't be sent directly, so your email app will open instead.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter",
-      foot_done: "Pipeline complete.", foot_thanks: "Thanks for reading."
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Download my CV", l_letter: "Cover letter"
     },
     timeline: [
       { date: "Aug 2025 to present", title: "Data & BI Engineer (work-study)", where: "Domial, Colmar", bullets: [
-        "Led a year-long migration of data integration workflows from Qlik to Talend (ETL).",
-        "Built metadata-driven Talend jobs and scripts to automate and standardise data pipelines.",
-        "Improved data quality by cleaning datasets and adding automated checks that flag inconsistent data.",
-        "Designed and delivered BI reports for several business teams.",
-        "Contributed to data compliance, secure storage and security best practices."
+        "Designing BI reports for the company's different business teams.",
+        "Setting up data quality controls.",
+        "Putting a data architecture in place in our data warehouse (DWH).",
+        "Led a year-long migration of data integration workflows from Qlik to Talend (ETL), with metadata-driven jobs."
       ] },
       { date: "2025 to 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
       { date: "Jan to Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website with WordPress and Elementor." },
       { date: "2023 to 2025", title: "BTS SIO, SLAM option (two-year degree in software development)", where: "Lycée René Cassin, Strasbourg", text: "Graduated with an average of 16/20 in the exams." },
-      { date: "Before 2023", title: "STMG baccalaureate", where: "Management and business track" }
+      { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business track" }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data quality", "Data governance"] },
@@ -78,10 +78,10 @@ var C = {
     ],
     projects: {
       alcateams: {
-        name: "ALCATeams", kind: "Project for Alcatel",
+        name: "ALCATeams", kind: "Team project, 8 people, for Alcatel",
         desc: "An enterprise social network that extends Alcatel's Rainbow collaboration platform.",
         context: "Project carried out for Alcatel. The goal was to extend Rainbow with an enterprise social network, where employees are organised into communities and can exchange and search messages.",
-        role: "I took part in building the application as a member of a development team.",
+        role: "Member of a team of eight. I mainly worked on the communities: member roles and sub-groups.",
         features: ["Communities with member roles and sub-groups", "Messages synchronised with Rainbow", "Full-text message search with Meilisearch", "Back end with a PostgreSQL database managed through Prisma, running in Docker"]
       },
       pollution: {
@@ -99,24 +99,24 @@ var C = {
         features: ["Checkers", "Go", "Tic-tac-toe", "Connect 4"]
       },
       pacmanc: {
-        name: "Pac-Man in C", kind: "Game in C",
+        name: "Pac-Man in C", kind: "Pair project in C",
         desc: "A Pac-Man game written in C with SDL2, following the rules of the original arcade version.",
         context: "The goal was to rebuild Pac-Man in C by following the rules of the 1980 arcade game, based on a written development plan covering the maze, the scoring and the ghost behaviour.",
-        role: "I developed the game in C with the SDL2 library, split into modules: map, entities, ghost AI, rendering and audio.",
-        features: ["Maze with warp tunnels, pellets and power pellets", "Ghost AI with alternating scatter and chase modes", "Lives, scoring and bonus fruits that change with the level", "Sprite rendering and sound with SDL2"]
+        role: "Project in a pair. I focused on the game logic and the code (map, entities, ghost AI, scoring) rather than on the sprites.",
+        features: ["Maze with warp tunnels, pellets and power pellets", "Ghost AI with alternating scatter and chase modes", "Lives, scoring and bonus fruits that change with the level", "Rendering and sound with SDL2"]
       },
       pacman: {
         name: "Pac-Man in Unity", kind: "Team project, 4 people",
         desc: "A team recreation of the original arcade game in Unity.",
         context: "Academic team project. The goal was to recreate a classic arcade game as a group of four.",
-        role: "Member of a team of four.",
-        features: ["Recreation of the original game with Unity and C#"]
+        role: "Member of a team of four. I mainly developed the ghosts.",
+        features: ["Recreation of the original game with Unity and C#", "The ghosts, which I mainly developed"]
       },
       appcredit: {
-        name: "AppCredit", kind: "Desktop application",
+        name: "AppCredit", kind: "Team project, 4 people, as project lead",
         desc: "A Windows loan simulator that calculates monthly payments and saves credits in a SQL Server database.",
         context: "The goal was to build a desktop application that simulates a loan from its amount, duration and annual rate, then records the credit and its client in a database.",
-        role: "I developed the application in C# with Windows Forms, a VB.NET class library for the calculation and a SQL Server database.",
+        role: "Project lead of a team of four. I wrote almost all of the application myself: C# with Windows Forms, a VB.NET class library for the calculation and the SQL Server database.",
         features: ["Monthly payment calculation from the amount, duration and annual rate", "A separate window to review and register credits", "A SQL Server stored procedure that creates the client if needed and rejects credits of 60,000 or more, inside a transaction"]
       },
       androidgames: {
@@ -135,50 +135,49 @@ var C = {
 
   fr: {
     title: "Imane Laazibi | Data et développement logiciel",
-    desc: "Portfolio d'Imane Laazibi, élève ingénieure en informatique (CNAM Grand Est) et Data & BI Engineer chez Domial.",
+    desc: "Portfolio d'Imane Laazibi, étudiante ingénieure en informatique (CNAM Grand Est) et Ingénieure Data & BI chez Domial.",
     ui: {
       skip: "Aller au contenu",
       nav_home: "Accueil", nav_about: "À propos", nav_skills: "Compétences", nav_projects: "Projets", nav_certs: "Certifications", nav_contact: "Contact",
       theme_aria: "Basculer entre le thème sombre et le thème clair", lang_btn: "EN", lang_aria: "Switch the site to English",
-      hero_role: "Élève ingénieure en informatique. Data et développement logiciel.",
-      hero_intro: "Je construis des pipelines de données fiables et les applications qui s'appuient dessus. Je suis actuellement Data & BI Engineer chez Domial, en alternance, en parallèle de mon cycle ingénieur au CNAM Grand Est.",
-      hero_status: "Je recherche un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028.",
+      hero_role: "Étudiante ingénieure en informatique. Data et développement logiciel.",
+      hero_intro: "Ingénieure Data & BI chez Domial en alternance, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH. En parallèle, je prépare mon diplôme d'ingénieure au CNAM Grand Est.",
+      hero_status: "Je recherche un stage de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028.",
       cta_projects: "Voir mes projets", cta_contact: "Me contacter",
-      about_title: "Comment je suis arrivée à la data",
-      about_p1: "J'ai commencé par un bac STMG, orienté gestion, sans aucune base en informatique. En découvrant la programmation, j'ai changé de voie : j'ai intégré un BTS SIO option SLAM (développement logiciel) et je l'ai obtenu avec 16/20 de moyenne aux examens.",
-      about_p2: "Ce résultat m'a permis d'entrer en cycle ingénieur au CNAM Grand Est, que je suis en alternance. Chez Domial, je travaille chaque jour sur la donnée : migration d'ETL, qualité des données, reporting BI et conformité.",
+      about_title: "Comment j'ai rencontré l'informatique",
+      about_p1: "J'ai passé un bac STMG option marketing. J'ai beaucoup aimé le Python que nous faisions en mathématiques, alors je me suis dirigée vers un BTS SIO option SLAM (développement logiciel), sans aucune base en informatique, et je l'ai obtenu avec 16/20 de moyenne aux examens.",
+      about_p2: "Ce résultat m'a ouvert les portes du cycle ingénieur au CNAM Grand Est, que je suis en alternance. Chez Domial, je conçois des rapports BI pour les différents métiers de l'entreprise, je mets en place des contrôles de qualité des données et une architecture de la donnée dans notre DWH.",
+      facts_title: "Ce que je fais en ce moment",
       facts: [
         ["En formation", "Cycle ingénieur en informatique, option Systèmes d'information (2025 à 2028)"],
-        ["En alternance", "Data & BI Engineer chez Domial (Colmar)"],
-        ["Langues", "Français (langue maternelle), anglais (B2)"],
+        ["En alternance", "Ingénieure Data & BI chez Domial (Colmar)"],
+        ["Langues", "Français (langue maternelle), anglais (B2 à C1)"],
         ["Basée à", "Strasbourg, France"]
       ],
       tl_title: "Expérience et formation",
       skills_title: "Outils et compétences",
       projects_title: "Projets choisis",
-      prev_aria: "Projet précédent", next_aria: "Projet suivant", open_hint: "Voir les détails",
+      prev_aria: "Projet précédent", next_aria: "Projet suivant", c_prev_aria: "Certification précédente", c_next_aria: "Certification suivante", open_hint: "Voir les détails",
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir",
       certs_title: "Certifications",
       contact_title: "Échangeons",
-      contact_intro: "Je cherche un stage international de 9 semaines en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
+      contact_intro: "Je recherche un stage de 9 semaines minimum, en anglais ou en français, en data ou en développement logiciel, de juillet à octobre 2028. Écrivez-moi ou retrouvez-moi via les liens ci-dessous.",
       f_name: "Nom", f_email: "E-mail", f_msg: "Message", f_send: "Envoyer le message",
       f_ok: "Message envoyé. Je vous répondrai dès que possible.",
       f_fallback: "L'envoi direct a échoué : votre application de messagerie va s'ouvrir.",
-      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation",
-      foot_done: "Pipeline terminé.", foot_thanks: "Merci de votre lecture."
+      l_github: "GitHub", l_gitlab: "GitLab", l_linkedin: "LinkedIn", l_cv: "Télécharger mon CV", l_letter: "Lettre de motivation"
     },
     timeline: [
-      { date: "Depuis août 2025", title: "Data & BI Engineer en alternance", where: "Domial, Colmar", bullets: [
-        "Pilotage d'une migration d'un an des flux d'intégration de données de Qlik vers Talend (ETL).",
-        "Développement de jobs et de scripts Talend pilotés par les métadonnées, pour automatiser et standardiser les pipelines.",
-        "Amélioration de la qualité des données : nettoyage des jeux de données et contrôles automatiques qui détectent les incohérences.",
-        "Conception et livraison de rapports BI pour plusieurs équipes métier.",
-        "Contribution à la conformité des données, au stockage sécurisé et aux bonnes pratiques de sécurité."
+      { date: "Depuis août 2025", title: "Ingénieure Data & BI en alternance", where: "Domial, Colmar", bullets: [
+        "Conception de rapports BI pour les différents métiers de l'entreprise.",
+        "Mise en place de contrôles de qualité des données.",
+        "Mise en place d'une architecture de la donnée dans notre DWH.",
+        "Pilotage d'une migration d'un an des flux d'intégration de données de Qlik vers Talend (ETL), avec des jobs pilotés par les métadonnées."
       ] },
       { date: "2025 à 2028 (prévu)", title: "Cycle ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
       { date: "Janv. à févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
       { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg", text: "Diplôme obtenu avec 16/20 de moyenne aux examens." },
-      { date: "Avant 2023", title: "Baccalauréat STMG", where: "Sciences et technologies du management et de la gestion" }
+      { date: "Avant 2023", title: "Baccalauréat STMG, option marketing", where: "Sciences et technologies du management et de la gestion" }
     ],
     skills: [
       { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Qualité des données", "Gouvernance des données"] },
@@ -189,10 +188,10 @@ var C = {
     ],
     projects: {
       alcateams: {
-        name: "ALCATeams", kind: "Projet pour Alcatel",
+        name: "ALCATeams", kind: "Projet d'équipe, 8 personnes, pour Alcatel",
         desc: "Un réseau social d'entreprise qui étend la plateforme collaborative Rainbow d'Alcatel.",
         context: "Projet réalisé pour Alcatel. L'objectif était d'étendre Rainbow avec un réseau social d'entreprise, où les employés sont organisés en communautés et peuvent échanger et rechercher des messages.",
-        role: "J'ai participé au développement de l'application au sein d'une équipe.",
+        role: "Membre d'une équipe de huit personnes. Je me suis surtout occupée des communautés : rôles des membres et sous-groupes.",
         features: ["Communautés avec rôles pour les membres et sous-groupes", "Messages synchronisés avec Rainbow", "Recherche plein texte dans les messages avec Meilisearch", "Back end avec une base PostgreSQL gérée via Prisma, exécutée dans Docker"]
       },
       pollution: {
@@ -210,24 +209,24 @@ var C = {
         features: ["Jeu de dames", "Go", "Morpion", "Puissance 4"]
       },
       pacmanc: {
-        name: "Pac-Man en C", kind: "Jeu en C",
+        name: "Pac-Man en C", kind: "Projet en binôme, en C",
         desc: "Un jeu Pac-Man écrit en C avec SDL2, fidèle aux règles de la version arcade d'origine.",
         context: "L'objectif était de reconstruire Pac-Man en C en suivant les règles du jeu d'arcade de 1980, à partir d'un plan de développement écrit couvrant le labyrinthe, le score et le comportement des fantômes.",
-        role: "J'ai développé le jeu en C avec la bibliothèque SDL2, découpé en modules : carte, entités, IA des fantômes, rendu et audio.",
-        features: ["Labyrinthe avec tunnels latéraux, pastilles et super-pastilles", "IA des fantômes alternant les modes dispersion et poursuite", "Vies, score et fruits bonus qui changent selon le niveau", "Affichage des sprites et son avec SDL2"]
+        role: "Projet en binôme. Je me suis concentrée sur la logique du jeu et le code (carte, entités, IA des fantômes, score) plutôt que sur les sprites.",
+        features: ["Labyrinthe avec tunnels latéraux, pastilles et super-pastilles", "IA des fantômes alternant les modes dispersion et poursuite", "Vies, score et fruits bonus qui changent selon le niveau", "Affichage et son avec SDL2"]
       },
       pacman: {
         name: "Pac-Man sous Unity", kind: "Projet d'équipe, 4 personnes",
         desc: "Recréation en équipe du jeu d'arcade original avec Unity.",
         context: "Projet académique en équipe. L'objectif était de recréer un jeu d'arcade classique à quatre.",
-        role: "Membre d'une équipe de quatre personnes.",
-        features: ["Recréation du jeu original avec Unity et C#"]
+        role: "Membre d'une équipe de quatre personnes. J'ai principalement développé les fantômes.",
+        features: ["Recréation du jeu original avec Unity et C#", "Les fantômes, que j'ai principalement développés"]
       },
       appcredit: {
-        name: "AppCredit", kind: "Application de bureau",
+        name: "AppCredit", kind: "Projet d'équipe, 4 personnes, cheffe de projet",
         desc: "Un simulateur de prêt pour Windows qui calcule les mensualités et enregistre les crédits dans une base SQL Server.",
         context: "L'objectif était de réaliser une application de bureau qui simule un prêt à partir de son montant, de sa durée et de son taux annuel, puis enregistre le crédit et son client dans une base de données.",
-        role: "J'ai développé l'application en C# avec Windows Forms, une bibliothèque de classes VB.NET pour le calcul et une base SQL Server.",
+        role: "Cheffe de projet d'une équipe de quatre personnes. J'ai écrit presque toute l'application : C# avec Windows Forms, une bibliothèque de classes VB.NET pour le calcul et la base SQL Server.",
         features: ["Calcul de la mensualité à partir du montant, de la durée et du taux annuel", "Une fenêtre dédiée pour consulter et enregistrer les crédits", "Une procédure stockée SQL Server qui crée le client si besoin et refuse les crédits de 60 000 ou plus, dans une transaction"]
       },
       androidgames: {
@@ -285,7 +284,7 @@ var ART = {
   }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
 
   function watch(scope) {
-    $$("[data-reveal], [data-reveal-mask], .skill-row, #pipe", scope).forEach(function (el) {
+    $$("[data-reveal], [data-reveal-mask], .skill-row", scope).forEach(function (el) {
       if (el.classList.contains("in")) return;
       if (reduce || !firstRender) el.classList.add("in");
       else io.observe(el);
@@ -308,7 +307,8 @@ var ART = {
     lb.textContent = u.lang_btn;
     lb.setAttribute("aria-label", u.lang_aria);
     lb.setAttribute("lang", lang === "en" ? "fr" : "en");
-    $("#facts").innerHTML = u.facts.map(function (f) { return "<li><b>" + esc(f[0]) + "</b>" + esc(f[1]) + "</li>"; }).join("");
+    $("#facts").innerHTML = '<li class="facts-head"><i aria-hidden="true"></i>' + esc(u.facts_title) + "</li>" +
+      u.facts.map(function (f) { return "<li><b>" + esc(f[0]) + "</b>" + esc(f[1]) + "</li>"; }).join("");
   }
 
   function renderTimeline() {
@@ -341,13 +341,14 @@ var ART = {
         '<div class="tags">' + m.tech.map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" +
         '<span class="more">' + esc(u.open_hint) + "</span></div></button>";
     }).join("");
-    updateCarousel();
+    updateProjects();
   }
 
   function renderCerts() {
-    $("#certList").innerHTML = C[lang].certs.map(function (c, i) {
-      return '<article class="cert" data-reveal="up" style="--d:' + (i * 0.12) + 's"><div class="year">' + esc(c.year) + "</div><h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p></article>";
+    $("#certTrack").innerHTML = C[lang].certs.map(function (c) {
+      return '<article class="cert" role="listitem"><div class="year">' + esc(c.year) + "</div><h3>" + esc(c.name) + "</h3><p>" + esc(c.text) + "</p></article>";
     }).join("");
+    updateCerts();
   }
 
   function renderLinks() {
@@ -444,26 +445,31 @@ var ART = {
     if (!ticking) { ticking = true; requestAnimationFrame(function () { onScroll(); ticking = false; }); }
   }, { passive: true });
 
-  /* ---------- carousel ---------- */
-  var track = $("#track"), prev = $("#prev"), next = $("#next"), count = $("#count");
-  function stepSize() {
-    var c = $(".card", track);
-    if (!c) return 300;
-    var gap = parseFloat(getComputedStyle(track).columnGap) || 24;
-    return c.getBoundingClientRect().width + gap;
-  }
-  function updateCarousel() {
-    var n = PROJECT_META.length, s = stepSize();
-    var i = Math.min(n - 1, Math.round(track.scrollLeft / s));
-    count.textContent = (i + 1) + " / " + n;
-    prev.disabled = track.scrollLeft < 4;
-    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
-  }
+  /* ---------- carousels (projects + certifications) ---------- */
   var behavior = function () { return reduce ? "auto" : "smooth"; };
-  prev.addEventListener("click", function () { track.scrollBy({ left: -stepSize(), behavior: behavior() }); });
-  next.addEventListener("click", function () { track.scrollBy({ left: stepSize(), behavior: behavior() }); });
-  track.addEventListener("scroll", function () { requestAnimationFrame(updateCarousel); }, { passive: true });
-  window.addEventListener("resize", updateCarousel);
+  function carousel(track, prev, next, count, sel) {
+    function stepSize() {
+      var c = $(sel, track);
+      if (!c) return 300;
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 24;
+      return c.getBoundingClientRect().width + gap;
+    }
+    function update() {
+      var n = $$(sel, track).length, s = stepSize();
+      var i = Math.max(0, Math.min(n - 1, Math.round(track.scrollLeft / s)));
+      count.textContent = n ? (i + 1) + " / " + n : "";
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    }
+    prev.addEventListener("click", function () { track.scrollBy({ left: -stepSize(), behavior: behavior() }); });
+    next.addEventListener("click", function () { track.scrollBy({ left: stepSize(), behavior: behavior() }); });
+    track.addEventListener("scroll", function () { requestAnimationFrame(update); }, { passive: true });
+    window.addEventListener("resize", update);
+    return update;
+  }
+  var track = $("#track");
+  var updateProjects = carousel(track, $("#prev"), $("#next"), $("#count"), ".card");
+  var updateCerts = carousel($("#certTrack"), $("#cprev"), $("#cnext"), $("#ccount"), ".cert");
 
   /* tilt on hover (mouse only) */
   if (finePointer && !reduce) {
@@ -528,13 +534,161 @@ var ART = {
       .then(function () { sendBtn.disabled = false; });
   });
 
-  /* ---------- hero art: pause motion for reduced-motion users ---------- */
-  if (reduce) {
-    var art = $(".hero-art");
-    if (art && art.pauseAnimations) art.pauseAnimations();
+  /* =====================================================================
+     HERO: typed SQL query, decoding name, live data network
+     ===================================================================== */
+  var hero = $("#home");
+
+  /* name: letters decode from random glyphs, then settle */
+  var GLYPHS = "01{}<>/#$%&=+*ABCDEF";
+  function buildWord(el, text, startAt) {
+    el.innerHTML = "";
+    var letters = text.split("").map(function (ch) {
+      var l = document.createElement("span");
+      l.className = "l";
+      l.textContent = ch;
+      el.appendChild(l);
+      return { el: l, ch: ch };
+    });
+    if (reduce) { letters.forEach(function (x) { x.el.classList.add("go"); }); return; }
+    var go = function () {
+      letters.forEach(function (x) { x.w = x.el.getBoundingClientRect().width; x.el.style.minWidth = x.w + "px"; });
+      letters.forEach(function (x, i) {
+        var t0 = startAt + i * 85, dur = 650;
+        setTimeout(function () {
+          x.el.classList.add("go");
+          var t = performance.now();
+          (function tick(now) {
+            var k = (now - t) / dur;
+            if (k >= 1) { x.el.textContent = x.ch; x.el.classList.add("done"); return; }
+            x.el.textContent = GLYPHS.charAt(Math.floor(Math.random() * GLYPHS.length));
+            requestAnimationFrame(tick);
+          })(t);
+        }, t0);
+      });
+    };
+    letters.forEach(function (x) { x.el.style.visibility = "hidden"; });
+    var show = function () { letters.forEach(function (x) { x.el.style.visibility = ""; }); go(); };
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(show); else show();
+  }
+  buildWord($("#w1"), "Imane", 350);
+  buildWord($("#w2"), "Laazibi", 700);
+
+  /* typed query line */
+  (function () {
+    var el = $("#typed"), q = "SELECT * FROM talents WHERE name = 'Imane Laazibi';", i = 0;
+    if (!el) return;
+    if (reduce) { el.textContent = q; return; }
+    setTimeout(function type() {
+      el.textContent = q.slice(0, ++i);
+      if (i < q.length) setTimeout(type, 22 + Math.random() * 30);
+    }, 250);
+  })();
+
+  /* spotlight follows the pointer */
+  if (finePointer && !reduce) {
+    hero.addEventListener("pointermove", function (e) {
+      var r = hero.getBoundingClientRect();
+      hero.style.setProperty("--mx", (e.clientX - r.left) + "px");
+      hero.style.setProperty("--my", (e.clientY - r.top) + "px");
+    });
   }
 
-  $("#year").textContent = new Date().getFullYear();
+  /* data network canvas: nodes drift, link up, and react to the cursor */
+  (function () {
+    var cv = $("#heroCanvas");
+    if (!cv || !cv.getContext) return;
+    var ctx = cv.getContext("2d");
+    var W = 0, H = 0, dpr = 1, nodes = [], mouse = { x: -999, y: -999, on: false };
+    var visible = true, raf = 0, accent = "#8B7CF6";
+    var LINK = 140;
+
+    function seed() {
+      var n = Math.max(28, Math.min(95, Math.round(W * H / 15000)));
+      nodes = [];
+      for (var i = 0; i < n; i++) {
+        nodes.push({
+          x: Math.random() * W, y: Math.random() * H,
+          vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35,
+          r: Math.random() * 1.6 + 1, big: Math.random() < .12
+        });
+      }
+    }
+    function resize() {
+      var r = hero.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = r.width; H = r.height;
+      cv.width = W * dpr; cv.height = H * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      seed();
+      draw();
+    }
+    function draw() {
+      accent = getComputedStyle(root).getPropertyValue("--accent").trim() || accent;
+      ctx.clearRect(0, 0, W, H);
+      ctx.fillStyle = accent; ctx.strokeStyle = accent;
+      var i, j, a, b, dx, dy, d;
+      for (i = 0; i < nodes.length; i++) {
+        a = nodes[i];
+        for (j = i + 1; j < nodes.length; j++) {
+          b = nodes[j]; dx = a.x - b.x; dy = a.y - b.y; d = dx * dx + dy * dy;
+          if (d < LINK * LINK) {
+            ctx.globalAlpha = (1 - Math.sqrt(d) / LINK) * .35;
+            ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+          }
+        }
+        if (mouse.on) {
+          dx = a.x - mouse.x; dy = a.y - mouse.y; d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 190) {
+            ctx.globalAlpha = (1 - d / 190) * .9;
+            ctx.lineWidth = 1.3;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+          }
+        }
+      }
+      for (i = 0; i < nodes.length; i++) {
+        a = nodes[i];
+        ctx.globalAlpha = a.big ? .95 : .6;
+        ctx.shadowColor = accent; ctx.shadowBlur = a.big ? 14 : 0;
+        ctx.beginPath(); ctx.arc(a.x, a.y, a.big ? a.r + 1.6 : a.r, 0, 6.2832); ctx.fill();
+      }
+      ctx.shadowBlur = 0; ctx.globalAlpha = 1;
+    }
+    function step() {
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        if (mouse.on) {
+          var dx = mouse.x - n.x, dy = mouse.y - n.y, d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 190 && d > 1) { n.vx += dx / d * .012; n.vy += dy / d * .012; }
+        }
+        n.vx *= .995; n.vy *= .995;
+        var sp = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
+        if (sp > 1.1) { n.vx *= 1.1 / sp; n.vy *= 1.1 / sp; }
+        n.x += n.vx; n.y += n.vy;
+        if (n.x < -10) n.x = W + 10; else if (n.x > W + 10) n.x = -10;
+        if (n.y < -10) n.y = H + 10; else if (n.y > H + 10) n.y = -10;
+      }
+    }
+    function loop() {
+      if (!visible || document.hidden) { raf = 0; return; }
+      step(); draw();
+      raf = requestAnimationFrame(loop);
+    }
+    function start() { if (!raf && !reduce) raf = requestAnimationFrame(loop); }
+
+    hero.addEventListener("pointermove", function (e) {
+      var r = hero.getBoundingClientRect();
+      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.on = true;
+    });
+    hero.addEventListener("pointerleave", function () { mouse.on = false; });
+    window.addEventListener("resize", resize);
+    document.addEventListener("visibilitychange", start);
+    new IntersectionObserver(function (en) { visible = en[0].isIntersecting; if (visible) start(); }, { threshold: 0 }).observe(hero);
+    resize();
+    start();
+  })();
+
   renderAll();
   onScroll();
 })();
