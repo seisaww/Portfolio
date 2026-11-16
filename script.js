@@ -48,13 +48,76 @@ var PROJECT_META = [
       { src: "images/android/android1.png", alt: { fr: "Menu des jeux", en: "Game menu" } },
       { src: "images/android/android2.png", alt: { fr: "Jeu de précision", en: "Timing game" } },
       { src: "images/android/android3.png", alt: { fr: "Jeu de mots", en: "Word game" } }
-    ] },
-  { key: "appcredit", art: "coins", tech: ["C#", "VB.NET", "Windows Forms", "SQL Server"],
-    repo: "https://github.com/seisaww/AppCredit", cover: "",
-    shots: [
-      { src: "images/appcredit/appcredit1.png", alt: { fr: "Enregistrement des crédits", en: "Saving loans" } },
-      { src: "images/appcredit/appcredit2.png", alt: { fr: "Calcul de la mensualité", en: "Monthly payment calculation" } }
     ] }
+];
+
+/* =====================================================================
+   SKILLS
+   lv: "work" (used at work) | "proj" (used in projects) | "basics" (notions)
+   at: where it was used. A project key (see PROJECT_META) shows that project name;
+       any other key comes from PLACES below.
+   Within a group, skills are shown strongest first (work, then proj, then basics).
+   ===================================================================== */
+var PLACES = {
+  domial: { fr: "Alternance chez Domial", en: "Work-study at Domial" },
+  luence: { fr: "Stage chez Luence", en: "Internship at Luence" },
+  bts: { fr: "Cours du BTS SIO", en: "BTS SIO coursework" },
+  btsproj: { fr: "Projets du BTS SIO", en: "BTS SIO projects" },
+  btswatch: { fr: "Veille technologique (BTS SIO)", en: "Technology watch (BTS SIO)" },
+  cnam: { fr: "Cours du cycle ingénieur (CNAM)", en: "Engineering degree coursework (CNAM)" },
+  cnamproj: { fr: "Projets du cycle ingénieur (CNAM)", en: "Engineering degree projects (CNAM)" },
+  devnet: { fr: "Certification Cisco DevNet", en: "Cisco DevNet certification" }
+};
+
+var SKILLS = [
+  { g: { fr: "Data & BI", en: "Data & BI" }, items: [
+    { n: "SQL", lv: "work", at: ["domial", "pollution", "alcateams", "bts", "cnam"] },
+    { n: "SQL Server", lv: "work", at: ["domial", "bts"] },
+    { n: "Talend (ETL)", lv: "work", at: ["domial"] },
+    { n: "Power BI", lv: "work", at: ["domial"] },
+    { n: "Qlik", lv: "work", at: ["domial"] },
+    { n: "PostgreSQL", lv: "proj", at: ["pollution", "alcateams", "cnam"] },
+    { n: "MongoDB", lv: "basics", at: ["btswatch"] }
+  ] },
+  { g: { fr: "Programmation", en: "Programming" }, items: [
+    { n: "C#", lv: "proj", at: ["pacman", "bts", "cnam"] },
+    { n: "C++", lv: "proj", at: ["boards", "bts", "cnam"] },
+    { n: "TypeScript", lv: "proj", at: ["alcateams", "pollution"] },
+    { n: "Kotlin", lv: "proj", at: ["androidgames"] },
+    { n: "C", lv: "proj", at: ["pacmanc"] },
+    { n: "JavaScript", lv: "proj", at: ["pollution", "bts"] },
+    { n: "HTML / CSS", lv: "proj", at: ["alcateams", "pollution"] },
+    { n: "PHP", lv: "proj", at: ["btsproj"] },
+    { n: "Python", lv: "basics", at: ["bts", "devnet"] }
+  ] },
+  { g: { fr: "Web et mobile", en: "Web & mobile" }, items: [
+    { n: "WordPress", lv: "work", at: ["luence"] },
+    { n: "React", lv: "proj", at: ["alcateams"] },
+    { n: "Angular", lv: "proj", at: ["pollution", "bts", "cnam"] },
+    { n: "Node.js / Express", lv: "proj", at: ["alcateams", "pollution", "bts"] },
+    { n: "Android (Jetpack Compose)", lv: "proj", at: ["androidgames"] }
+  ] },
+  { g: { fr: "Applications et jeux", en: "Desktop & games" }, items: [
+    { n: "Unity", lv: "proj", at: ["pacman", "cnam"] },
+    { n: "Unity ML-Agents", lv: "proj", at: ["pacman"] },
+    { n: "Qt", lv: "proj", at: ["boards"] },
+    { n: "Windows Forms", lv: "proj", at: ["cnamproj"] }
+  ] },
+  { g: { fr: "Conception logicielle", en: "Software design" }, items: [
+    { n: { fr: "Gestion de projet", en: "Project management" }, lv: "work", at: ["bts"," cnam"] },
+    { n: { fr: "Conception orientée objet", en: "Object-oriented design" }, lv: "proj", at: ["boards", "pacman"] },
+    { n: { fr: "Principes SOLID", en: "SOLID principles" }, lv: "proj", at: ["boards"] },
+    { n: "Design patterns", lv: "proj", at: ["cnam"] }
+  ] },
+  { g: { fr: "Systèmes et outils", en: "Systems & tools" }, items: [
+    { n: "Git / GitHub", lv: "proj", at: ["bts", "cnam"] },
+    { n: "Windows", lv: "basics", at: [""] },
+    { n: "Docker", lv: "proj", at: ["alcateams", "bts", "cnam"] },
+    { n: "Linux", lv: "basics", at: ["bts", "cnam"] },
+    { n: "Packet Tracer", lv: "basics", at: ["bts"] },
+    { n: "Agile (Scrum)", lv: "basics", at: ["bts"," cnam"] },
+    { n: "Active Directory", lv: "basics", at: ["bts"] }
+  ] }
 ];
 
 /* =====================================================================
@@ -84,6 +147,9 @@ var C = {
       ],
       tl_title: "Experience and education",
       skills_title: "Tools and skills",
+      lv_work: "At work", lv_proj: "In projects", lv_basics: "Basics",
+      sk_hint: "Hover over or select a skill to see where I used it.",
+      sk_from: "Learned through", sk_close: "Close",
       projects_title: "Projects",
       prev_aria: "Previous project", next_aria: "Next project", c_prev_aria: "Previous certification", c_next_aria: "Next certification", open_hint: "See details",
       d_context: "Context and goal", d_role: "My role", d_features: "Main features", d_tech: "Technologies", d_shots: "Screenshots", d_code: "View the code", d_close: "Close", d_shot_ph: "Screenshot coming soon", lb_close: "Close", lb_prev: "Previous screenshot", lb_next: "Next screenshot", lb_open: "Enlarge screenshot",
@@ -107,14 +173,6 @@ var C = {
       { date: "Jan – Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website using WordPress and Elementor." },
       { date: "2023 – 2025", title: "BTS SIO, SLAM option (two-year higher national diploma in software development)", where: "Lycée René Cassin, Strasbourg" },
       { date: "Before 2023", title: "STMG baccalaureate, marketing option", where: "Management and business technology track", text: "Passed with honours (mention assez bien)." }
-    ],
-    skills: [
-      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Data warehouse (DWH)", "Stored procedures", "Data quality", "Data governance"] },
-      { g: "Programming", items: ["Python", "C#", "VB.NET", "C", "C++", "Kotlin", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
-      { g: "Software design", items: ["Object-oriented design", "SOLID principles", "Design patterns", "Project management"] },
-      { g: "Web & mobile", items: ["Angular", "React", "Node.js", "Prisma", "Meilisearch", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
-      { g: "Desktop & games", items: ["Windows Forms", "Qt", "Unity", "Unity ML-Agents", "SDL2"] },
-      { g: "Systems & tools", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Packet Tracer"] }
     ],
     projects: {
       alcateams: {
@@ -170,17 +228,6 @@ var C = {
           "Score, rounds, lives and a Game Over screen to play again"
         ]
       },
-      appcredit: {
-        name: "AppCredit", kind: "Team project, 4 people, project lead",
-        desc: "A Windows loan simulator that calculates monthly payments and stores loans in a SQL Server database.",
-        context: "The goal was to build a desktop application that simulates a loan based on its amount, term and annual interest rate, then saves the loan and its client in a database.",
-        role: "Project lead for a team of four: I organised the work and the deliverables, and contributed to developing the application and the database.",
-        features: [
-          "Monthly payment calculation based on the amount, term and annual interest rate (VB.NET class library)",
-          "A Windows Forms window to view and register loans",
-          "A SQL Server stored procedure that creates the client if needed and rejects loans of 60,000 or more, within a transaction"
-        ]
-      },
       androidgames: {
         name: "Android mini-games", kind: "Individual project, mobile app",
         desc: "An Android app in Kotlin and Jetpack Compose with two mini-games and a shared leaderboard.",
@@ -227,6 +274,9 @@ var C = {
       ],
       tl_title: "Expérience et formation",
       skills_title: "Outils et compétences",
+      lv_work: "En entreprise", lv_proj: "En projets", lv_basics: "Notions",
+      sk_hint: "Survolez ou sélectionnez une compétence pour voir où je l'ai utilisée.",
+      sk_from: "Acquis via", sk_close: "Fermer",
       projects_title: "Projets",
       prev_aria: "Projet précédent", next_aria: "Projet suivant", c_prev_aria: "Certification précédente", c_next_aria: "Certification suivante", open_hint: "Voir les détails",
       d_context: "Contexte et objectif", d_role: "Mon rôle", d_features: "Fonctionnalités principales", d_tech: "Technologies", d_shots: "Captures d'écran", d_code: "Voir le code", d_close: "Fermer", d_shot_ph: "Capture à venir", lb_close: "Fermer", lb_prev: "Capture précédente", lb_next: "Capture suivante", lb_open: "Agrandir la capture",
@@ -250,14 +300,6 @@ var C = {
       { date: "Janv. – févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
       { date: "2023 à 2025", title: "BTS SIO option SLAM (bac+2 en développement logiciel)", where: "Lycée René Cassin, Strasbourg" },
       { date: "Avant 2023", title: "Baccalauréat STMG, option marketing", where: "Sciences et technologies du management et de la gestion", text: "Obtenu avec mention assez bien." }
-    ],
-    skills: [
-      { g: "Data & BI", items: ["SQL", "SQL Server", "PostgreSQL", "MongoDB", "Talend (ETL)", "Qlik", "Power BI", "Entrepôt de données (DWH)", "Procédures stockées", "Qualité des données", "Gouvernance des données"] },
-      { g: "Programmation", items: ["Python", "C#", "VB.NET", "C", "C++", "Kotlin", "TypeScript", "JavaScript", "PHP", "HTML / CSS"] },
-      { g: "Conception logicielle", items: ["Conception orientée objet", "Principes SOLID", "Design patterns"] },
-      { g: "Web et mobile", items: ["Angular", "React", "Node.js", "Prisma", "Android Studio", "Jetpack Compose", "WordPress", "Elementor", "CodeIgniter"] },
-      { g: "Applications et jeux", items: ["Windows Forms", "Qt", "Unity", "Unity ML-Agents", "SDL2"] },
-      { g: "Systèmes et outils", items: ["Linux", "Windows", "Active Directory", "Git / GitHub", "Docker", "Agile (Scrum)", "Gestion de projet", "Packet Tracer"] }
     ],
     projects: {
       alcateams: {
@@ -311,17 +353,6 @@ var C = {
           "Quatre fantômes ayant chacun leur propre comportement, basé sur des nœuds placés aux intersections du labyrinthe",
           "Un éditeur de cartes avec sauvegarde et chargement des labyrinthes, et deux cartes jouables",
           "Score, manches, vies et écran de Game Over pour recommencer"
-        ]
-      },
-      appcredit: {
-        name: "AppCredit", kind: "Projet d'équipe, 4 personnes, cheffe de projet",
-        desc: "Un simulateur de prêt pour Windows qui calcule les mensualités et enregistre les crédits dans une base SQL Server.",
-        context: "L'objectif était de réaliser une application de bureau qui simule un prêt à partir de son montant, de sa durée et de son taux annuel, puis enregistre le crédit et son client dans une base de données.",
-        role: "Cheffe de projet d'une équipe de quatre personnes : j'ai organisé le travail et les livrables, et participé au développement de l'application et de la base de données.",
-        features: [
-          "Calcul de la mensualité à partir du montant, de la durée et du taux annuel (bibliothèque de classes VB.NET)",
-          "Une fenêtre Windows Forms pour consulter et enregistrer les crédits",
-          "Une procédure stockée SQL Server, exécutée dans une transaction, qui crée le client si nécessaire et refuse les crédits de 60 000 ou plus"
         ]
       },
       androidgames: {
@@ -427,12 +458,107 @@ var ART = {
     onScroll();
   }
 
+  /* a value can be a plain string or { fr: "...", en: "..." } */
+  function tr(v) { return typeof v === "string" ? v : (v[lang] || v.fr || v.en || ""); }
+  var LV_ORDER = { work: 0, proj: 1, basics: 2 };
+  function lvLabel(lv) { return ui()["lv_" + lv]; }
+  function lvDot(lv) { return '<i class="lv lv-' + lv + '" aria-hidden="true"></i>'; }
+
   function renderSkills() {
-    $("#skillList").innerHTML = C[lang].skills.map(function (s) {
-      return '<div class="skill-row"><h3>' + esc(s.g) + '</h3><div class="chips">' +
-        s.items.map(function (t, k) { return '<span class="chip" style="--k:' + k + '">' + esc(t) + "</span>"; }).join("") + "</div></div>";
+    var u = ui();
+    closeSkillPop(false);
+    $("#skillLegend").innerHTML = '<ul class="lv-keys">' + ["work", "proj", "basics"].map(function (lv) {
+      return "<li>" + lvDot(lv) + esc(lvLabel(lv)) + "</li>";
+    }).join("") + '</ul><p class="lv-hint">' + esc(u.sk_hint) + "</p>";
+    $("#skillList").innerHTML = SKILLS.map(function (s, g) {
+      var items = s.items.map(function (it, k) { return { it: it, k: k }; })
+        .sort(function (a, b) { return (LV_ORDER[a.it.lv] - LV_ORDER[b.it.lv]) || (a.k - b.k); });
+      return '<div class="skill-row"><h3>' + esc(tr(s.g)) + '</h3><div class="chips">' +
+        items.map(function (x, k) {
+          return '<button class="chip chip-' + x.it.lv + '" type="button" style="--k:' + k + '" data-g="' + g + '" data-k="' + x.k +
+            '" aria-expanded="false" aria-controls="skillPop">' + lvDot(x.it.lv) + esc(tr(x.it.n)) +
+            '<span class="sr">, ' + esc(lvLabel(x.it.lv)) + "</span></button>";
+        }).join("") + "</div></div>";
     }).join("");
   }
+
+  /* ---------- skill popover: where each skill was used ---------- */
+  var pop = document.createElement("div");
+  pop.id = "skillPop"; pop.className = "skill-pop"; pop.hidden = true;
+  var popChip = null, popPinned = false, popTimer = 0;
+
+  function fillSkillPop(chip) {
+    var u = ui(), it = SKILLS[+chip.getAttribute("data-g")].items[+chip.getAttribute("data-k")];
+    var places = it.at.map(function (key) {
+      var i = -1;
+      PROJECT_META.forEach(function (m, j) { if (m.key === key) i = j; });
+      var label = i >= 0 ? C[lang].projects[key].name : (PLACES[key] ? tr(PLACES[key]) : "");
+      return label ? '<li class="pop-text">' + esc(label) + "</li>" : "";
+    }).join("");
+    pop.innerHTML = '<div class="pop-head">' + lvDot(it.lv) + "<b>" + esc(tr(it.n)) + "</b><span>" + esc(lvLabel(it.lv)) + "</span>" +
+      '<button class="pop-x" type="button" aria-label="' + esc(u.sk_close) + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>' +
+      '<p class="pop-lab">' + esc(u.sk_from) + "</p><ul>" + places + "</ul>";
+  }
+
+  function placeSkillPop(chip) {
+    chip.insertAdjacentElement("afterend", pop);   /* right after the chip, so Tab reaches its close button */
+    pop.hidden = false;
+    var max = chip.parentNode.clientWidth - pop.offsetWidth;
+    pop.style.left = Math.max(0, Math.min(chip.offsetLeft, max)) + "px";
+    pop.style.top = (chip.offsetTop + chip.offsetHeight + 10) + "px";
+  }
+
+  function openSkillPop(chip, pinned) {
+    clearTimeout(popTimer);
+    if (popChip && popChip !== chip) popChip.setAttribute("aria-expanded", "false");
+    popChip = chip; popPinned = pinned;
+    fillSkillPop(chip);
+    placeSkillPop(chip);
+    chip.setAttribute("aria-expanded", "true");
+    pop.classList.toggle("pinned", pinned);
+  }
+
+  function closeSkillPop(refocus) {
+    clearTimeout(popTimer);
+    if (!popChip) return;
+    var chip = popChip;
+    chip.setAttribute("aria-expanded", "false");
+    pop.hidden = true; popChip = null; popPinned = false;
+    if (refocus && document.contains(chip)) chip.focus();
+  }
+
+  function laterCloseSkillPop() {
+    clearTimeout(popTimer);
+    if (!popPinned) popTimer = setTimeout(function () { closeSkillPop(false); }, 180);
+  }
+
+  var skillList = $("#skillList");
+  skillList.addEventListener("click", function (e) {
+    var t = e.target;
+    if (t.closest(".pop-x")) { closeSkillPop(true); return; }
+    var chip = t.closest(".chip");
+    if (!chip) return;
+    openSkillPop(chip, true);   /* a click always shows it; close with ×, Esc or a click elsewhere */
+  });
+  if (finePointer) {
+    skillList.addEventListener("mouseover", function (e) {
+      var chip = e.target.closest(".chip");
+      if (chip && !popPinned && chip !== popChip) openSkillPop(chip, false);
+      if (chip || e.target.closest(".skill-pop")) clearTimeout(popTimer);
+    });
+    skillList.addEventListener("mouseout", function (e) {
+      var to = e.relatedTarget;
+      if (to && to.closest && (to.closest(".skill-pop") || to.closest(".chip") === popChip)) return;
+      if (e.target.closest(".chip, .skill-pop")) laterCloseSkillPop();
+    });
+  }
+  skillList.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && popChip) { e.preventDefault(); closeSkillPop(true); }
+  });
+  document.addEventListener("click", function (e) {
+    if (popChip && !e.target.closest(".chip, .skill-pop")) closeSkillPop(false);
+  });
+  window.addEventListener("resize", function () { if (popChip) placeSkillPop(popChip); });
 
   /* screenshot captions can be a plain string or { fr: "...", en: "..." } */
   function altOf(s) { var a = s.alt || ""; return typeof a === "string" ? a : (a[lang] || a.fr || a.en || ""); }
@@ -661,12 +787,15 @@ var ART = {
   track.addEventListener("click", function (e) {
     var card = e.target.closest ? e.target.closest(".card") : null;
     if (!card) return;
-    lastFocus = card;
-    openIndex = parseInt(card.getAttribute("data-i"), 10);
+    openProject(parseInt(card.getAttribute("data-i"), 10), card);
+  });
+  function openProject(i, from) {
+    lastFocus = from;
+    openIndex = i;
     renderDialog();
     if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
     document.body.style.overflow = "hidden";
-  });
+  }
   dlg.addEventListener("click", function (e) {
     if (e.target === dlg || (e.target.closest && e.target.closest(".close"))) dlg.close();
   });
