@@ -167,7 +167,7 @@ var C = {
         "Designing BI reports for the company's business teams.",
         "Setting up data quality controls.",
         "Building the data architecture of our data warehouse (DWH).",
-        "Led a year-long migration of data integration workflows from Qlik to Talend (ETL), using metadata-driven jobs."
+        "Took part in a year-long migration of data integration workflows from Qlik to Talend (ETL), with metadata-driven jobs."
       ] },
       { date: "2025 – 2028 (expected)", title: "Engineering degree in Computer Science, Information Systems track", where: "CNAM Grand Est, Strasbourg" },
       { date: "Jan – Feb 2025", title: "Web developer intern", where: "Luence, Strasbourg", text: "Redesigned the company website using WordPress and Elementor." },
@@ -294,7 +294,7 @@ var C = {
         "Conception de rapports BI pour les différents métiers de l'entreprise.",
         "Mise en place de contrôles de qualité des données.",
         "Contribution à la conception de l'architecture de notre entrepôt de données (DWH).",
-        "Pilotage de la migration, sur un an, des flux d'intégration de données de Qlik vers Talend (ETL), avec des jobs basés sur les métadonnées."
+        "Participation à une migration d'un an des flux d'intégration de données de Qlik vers Talend (ETL), avec des jobs pilotés par les métadonnées."
       ] },
       { date: "2025 à 2028 (prévu)", title: "Cycle ingénieur en informatique, option Systèmes d'information", where: "CNAM Grand Est, Strasbourg" },
       { date: "Janv. – févr. 2025", title: "Stagiaire développeuse web", where: "Luence, Strasbourg", text: "Refonte du site web de l'entreprise avec WordPress et Elementor." },
